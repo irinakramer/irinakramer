@@ -2,7 +2,6 @@ import React from 'react';
 import Layout from '../components/layout';
 import '../styles/Index.css';
 import profile from '../images/irina.jpg';
-import img_qf from '../images/quickfinder_2019.png';
 import Project from '../components/project';
 
 console.log(profile);
