@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout';
-import '../styles/Index.css';
+import '../styles/index.css';
 import profile from '../images/irina.jpg';
 import Project from '../components/project';
 
