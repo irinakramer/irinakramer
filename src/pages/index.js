@@ -2,9 +2,207 @@ import React from 'react';
 import Layout from '../components/layout';
 import '../styles/index.css';
 import profile from '../images/irina.jpg';
-import Project from '../components/project';
 
 console.log(profile);
+
+const data = [
+    {
+        id: 1,
+        name: 'My Daily Log',
+        url: 'https://lit-ridge-16056.herokuapp.com/',
+        description: 'App for logging daily outdoor and exercise activities.',
+        tech: 'JavaScript, Firebase, APIs, CRUD functionalities, Bootstrap.',
+        image: 'https://via.placeholder.com/150x90',
+        year: '2020'
+    },
+    {
+        id: 2,
+        name: 'News Feedr',
+        url: 'https://feedr-80451.herokuapp.com/',
+        description: 'Personalized news agregator app from various news sources.',
+        tech: 'JavaScript, news APIs, search.',
+        image: '',
+        year: '2020'
+    },
+    {
+        id: 3,
+        name: 'Lowepro Quickfinder',
+        url: 'https://www.lowepro.com/us-en/#quickfinder',
+        description: 'App for quick navigation to a product series page on eCommerce site.',
+        tech: 'JavaScript, HTML, CSS, SVG, Typo3 Flux.',
+        image: '',
+        year: '2017'
+    },
+    {
+        id: 4,
+        name: 'JOBY.com eCommerce site',
+        url: 'http://joby.com/us-en/',
+        description: 'Responsive templates for product, category, shopping cart pages, tech specs feed, and marketing landing pages.',
+        tech: 'Magento theming, HTML, CSS, PHP, Typo3 templating.',
+        image: '',
+        year: '2017'
+    },
+    {
+        id: 5,
+        name: 'Responsive Mega Menu',
+        url: 'https://irinakramer.github.io/mega-menu/',
+        description: 'Lightweight CSS menu for JOBY.com with CSS gradients, transitions, SVG icons, focus on performance and scalability.',
+        tech: 'CSS, HTML, SVG animation',
+        image: '',
+        year: '2017',
+        extra_text: 'Versions: ',
+        extra_links: [
+            {
+                name: 'Desktop',
+                url: 'https://irinakramer.github.io/mega-menu/'
+            },
+            {
+                name: 'Mobile',
+                url: 'https://irinakramer.github.io/mega-menu/mobile.html'
+            }
+        ]
+    },
+    {
+        id: 6,
+        name: 'Lowepro eCommerce site',
+        url: 'https://www.lowepro.com/us-en/',
+        description: 'Magento eCommerce theme implementation for international brand, product and category pages, shopping cart optimization, all UI elements and rich content.',
+        tech: 'Magento, PHP, JavaScript, HTML, CSS, APIs.',
+        image: '',
+        year: '2016'
+    },
+    {
+        id: 7,
+        name: 'Lowepro Blog',
+        url: 'http://blog.lowepro.com',
+        description: 'Wordpress theme customizations according to brands style guidelines, new blog post template, old blogs migration to new.',
+        tech: 'Wordpress, HTML, PHP, CSS',
+        image: '',
+        year: '2016',
+        extra_text: 'More: ',
+        extra_links: [
+            {
+                name: 'JOBY blog',
+                url: 'http://blog.joby.com'
+            }
+        ]
+    },
+    {
+        id: 8,
+        name: 'Responsive Grid with Flexbox',
+        url: 'https://codepen.io/irinakramer/pen/jcLlp',
+        description: 'Lightweight, framework-independent, fully responsive grid in Flexbox.',
+        tech: 'CSS, Flexbox, HTML',
+        image: '',
+        year: '2014'
+    },
+    {
+        id: 9,
+        name: 'Brand Ambassadors',
+        url: 'https://www.lowepro.com/us-en/loweprofessionals/',
+        description: 'Landing pages built from PSD mockups to functional templates consisting of components.',
+        tech: 'HTML, SCSS, JavaScript, Typo3 Flux and Fluid templating',
+        image: '',
+        year: '2018',
+        extra_text: 'More brands: ',
+        extra_links: [
+            {
+                name: 'Lowepro',
+                url: 'https://www.lowepro.com/us-en/loweprofessionals/viktoria-haack/'
+            },
+            {
+                name: 'JOBY',
+                url: 'https://joby.com/us-en/ambassadors/andy-burgess/'
+            },
+            {
+                name: 'Manfrotto',
+                url: 'https://www.manfrotto.com/us-en/experience/ambassadors/'
+            },
+            {
+                name: 'Gitzo',
+                url: 'https://www.gitzo.com/us-en/ambassadors/'
+            }
+        ]
+    },
+    {
+        id: 10,
+        name: 'Picture of Life',
+        url: 'https://www.manfrotto.com/it-it/experience/picture-of-life/',
+        description: 'Components based landing page.',
+        tech: 'HTML, JavaScript, SCSS, Typo3 templating',
+        image: '',
+        year: '2019',
+        extra_text: 'More: ',
+        extra_links: [
+            {
+                name: 'Capture Life',
+                url: 'https://www.lowepro.com/us-en/about-us/'
+            }
+        ]
+    },
+    {
+        id: 11,
+        name: 'Shopping Assistant',
+        url: 'https://www.manfrotto.com/us-en/shopping-assistant/',
+        description: 'Landing page for sorting articles based on user selection.',
+        tech: 'JavaScript, HTML, SCSS, Bootstrap, Typo3 Flux and Fluid templating',
+        image: '',
+        year: '2018'
+    },
+    {
+        id: 12,
+        name: 'Math Skills Tutorial',
+        url: 'https://github.com/jay-peretz/math_project',
+        description: 'An online tutorial for learning pre-algebra and arithmetic, implemented directives for new problem sets, code maintenance.',
+        tech: 'Angular JS, JavaScript, HTML, CSS',
+        image: '',
+        year: '2013'
+    }
+];
+
+const ProjectList = ({ projects }) => (
+    <>
+        {
+            projects.map(project => (
+                <ProjectItem project={project} key={project.id} />
+            ))
+        }
+    </>
+);
+// map over extras
+const ExtraList = ({ extras }) => (
+    <>
+        {
+            extras.map(extra =>
+                <ExtraItem extra={extra} key={extra.id} />
+            )
+        }
+    </>
+);
+const ExtraItem = ({ extra }) => (
+    <span className="project__extra"><a href={extra.url} target="_blank">{extra.name}</a></span>
+)
+const ProjectItem = ({ project }) => (
+    <div className="project">
+        <div className="project__text">
+            <h3><a href={project.url} target="_blank">{project.name}</a></h3>
+
+            <p>{project.description}
+
+                {project.extra_text &&
+                    <> <br />
+                        {project.extra_text}
+                        <ExtraList extras={project.extra_links} />
+                    </>
+                }
+                <br />
+                <small>{project.tech}</small></p>
+        </div>
+        <div className="project__image">
+            <img src={project.image} />
+        </div>
+    </div>
+);
 
 
 export default () => (
@@ -16,74 +214,7 @@ export default () => (
         <section>
             <a name="projects"></a>
             <h2>Projects &amp; Portfolio</h2>
-
-            <Project>
-                <h3><a href="https://lit-ridge-16056.herokuapp.com/" target="_blank">My Daily Log</a></h3>
-                <p>App for logging daily outdoor and exercise activities.<br />
-                    <small>JavaScript, Firebase, APIs, CRUD functionalities, Bootstrap.</small></p>
-            </Project>
-            <Project>
-                <h3><a href="https://feedr-80451.herokuapp.com/">News Feedr</a></h3>
-                <p>
-                    Personalized news agregator app from various news sources. <br />
-                    <small>JavaScript, news APIs, search.</small>
-                </p>
-            </Project>
-            <Project>
-                <h3><a href="https://www.lowepro.com/us-en/#quickfinder" target="_blank">Lowepro Quickfinder</a></h3>
-                <p>App for quick navigation to a product series page on eCommerce site.<br />
-                    <small>JavaScript, HTML, CSS, SVG, Typo3 Flux.</small></p>
-            </Project>
-            <Project>
-                <h3><a href="http://joby.com/us-en/" target="_blank">JOBY.com eCommerce store</a></h3>
-                <p>Responsive templates for product, category, shopping cart pages, tech specs feed, and marketing landing pages.<br />
-                    <small>Magento theming, HTML, CSS, PHP, Typo3 templating.</small></p>
-            </Project>
-            <Project>
-                <h3><a href="https://irinakramer.github.io/mega-menu/">Responsive Mega Menu</a></h3>
-                <p>Lightweight CSS menu for JOBY.com with CSS gradients, transitions, SVG icons, focus on performance and scalability. <a href="https://irinakramer.github.io/mega-menu/">Desktop</a> and <a href="https://irinakramer.github.io/mega-menu/mobile.html">Mobile</a> versions.<br />
-                    <small></small></p>
-            </Project>
-            <Project>
-                <h3><a href="https://www.lowepro.com/us-en/" target="_blank">Lowepro eCommerce store</a></h3>
-                <p>Magento eCommerce theme implementation for international brand, product and category pages, shopping cart optimization, all UI elements and rich content.<br />
-                    <small>Magento, PHP, JavaScript, HTML, CSS, APIs.</small></p>
-            </Project>
-            <Project>
-                <h3><a href="http://blog.lowepro.com" target="_blank">Lowepro Blog</a> and <a href="http://blog.joby.com" target="_blank">JOBY Blog</a></h3>
-                <p>Wordpress theme customizations according to brands style guidelines, new post template, old blogs migration to new.<br />
-                    <small></small></p>
-            </Project>
-            <Project>
-                <h3><a href="https://codepen.io/irinakramer/pen/jcLlp" target="_blank">Responsive Grid with Flexbox</a></h3>
-                <p>Lightweight, framework-independent, fully responsive grid in Flexbox.<br />
-                    <small></small></p>
-            </Project>
-            <Project>
-                <h3><a href="https://www.lowepro.com/us-en/loweprofessionals/" target="_blank">Brand Ambassadors</a></h3>
-                <p>Landing pages built from PSD mockups to functional templates consisting of components. Brands: <a href="https://www.lowepro.com/us-en/loweprofessionals/viktoria-haack/" target="_blank">Lowepro</a>, <a href="https://joby.com/us-en/ambassadors/andy-burgess/" target="_blank">JOBY</a>, <a href="https://www.manfrotto.com/us-en/experience/ambassadors/" target="_blank">Manfrotto</a>, <a href="https://www.gitzo.com/us-en/ambassadors/" target="_blank">Gitzo</a>.<br />
-                    <small>HTML, SCSS, JavaScript, Typo3 Flux and Fluid templating</small></p>
-            </Project>
-            <Project>
-                <h3><a href="https://www.manfrotto.com/it-it/experience/picture-of-life/" target="_blank">Picture of Life </a></h3>
-                <p>Components based landing page.<br />
-                    <small>HTML, JavaScript, SCSS, Typo3 templating</small></p>
-            </Project>
-            <Project>
-                <h3><a href="https://www.lowepro.com/us-en/about-us/" target="_blank">Capture Life</a></h3>
-                <p>Components based landing page <br />
-                    <small>HTML, JavaScript, SCSS, SVG animations, Bootstrap, Typo3</small></p>
-            </Project>
-            <Project>
-                <h3><a href="https://www.manfrotto.com/us-en/shopping-assistant/" target="_blank">Shopping Assistant</a></h3>
-                <p>Landing page for sorting articles based on user selection.<br />
-                    <small>JavaScript, HTML, SCSS, Bootstrap, Typo3 Flux and Fluid templating</small></p>
-            </Project>
-            <Project>
-                <h3><a href="https://github.com/jay-peretz/math_project" target="_blank">Math Skills Tutorial</a></h3>
-                <p>An online tutorial for learning pre-algebra and arithmetic, implemented directives for new problem sets, code maintenance.<br />
-                    <small>Angular JS, JavaScript, HTML, CSS </small></p>
-            </Project>
+            <ProjectList projects={data} />
         </section>
         <section>
             <a name="contact"></a>

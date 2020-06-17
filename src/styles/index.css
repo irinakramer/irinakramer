@@ -18,6 +18,8 @@
 .project {
   margin-bottom: 1rem;
   border-bottom: 1px solid #afef8c;
+  display: flex;
+  justify-content: space-between;
 }
 .project:last-of-type {
   margin-bottom: 4rem;
@@ -31,6 +33,12 @@
 .project p small {
   color: #6b7c84;
 }
+.project__text .project__extra::after {
+  content: ", ";
+}
+.project__text .project__extra:last-of-type::after {
+  content: "";
+}
 /* 
 =======
 Media Queries
@@ -43,5 +51,8 @@ Media Queries
   .intro img {
     max-width: 80px;
     margin-right: 0.75rem;
+  }
+  .project h3 {
+    margin-top: 0;
   }
 }
