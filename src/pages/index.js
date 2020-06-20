@@ -232,7 +232,7 @@ export default () => (
         <section>
             <a name="contact"></a>
             <h2>Contact</h2>
-            <p>You can send me an <a href="mailto:irakramer@gmail.com">email</a> or contact me via <a href="https://github.com/irinakramer">LinkedIn</a>. Thanks for visiting!</p>
+            <p>You can send me an <a href="mailto:irakramer@gmail.com">email</a> or contact me via <a href="https://www.linkedin.com/in/irinakramer/">LinkedIn</a>. Thanks for visiting!</p>
             <br /><br />
         </section>
     </Layout>

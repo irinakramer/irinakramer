@@ -5,6 +5,14 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: "Irina Kramer - Frontend Developer",
+    description:
+      "Front End Web Developer, ecommerce and enterprise sites, web apps, UI components.",
+    url: "https://www.irinakramer.com",
+    image: "/images/irina.jpg",
+    twitterUsername: "@irinakramer",
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
