@@ -39,6 +39,17 @@
 .project__text .project__extra:last-of-type::after {
   content: "";
 }
+.project__image a img {
+  width: 150px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.02), 0 5px 22px -8px rgba(0, 0, 0, 0.1);
+  transition: all 0.8s ease;
+}
+.project__image a:hover img {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.03), 0 8px 26px -4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  transform: scale(1.03) translateY(-2%);
+}
 /* 
 =======
 Media Queries

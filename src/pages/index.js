@@ -2,6 +2,18 @@ import React from 'react';
 import Layout from '../components/layout';
 import '../styles/index.css';
 import profile from '../images/irina.jpg';
+import projMyDailyLog from '../images/projects_MyDailyLog.png';
+import projFeedr from '../images/projects_Feedr.png';
+import projQuickfinder from '../images/projects_Quickfinder.png';
+import projJoby from '../images/projects_JOBY.png';
+import projJobyMenu from '../images/projects_JOBYmenu.png';
+import projLowepro from '../images/projects_Lowepro.png';
+import projLoweproBlog from '../images/projects_LoweproBlog.png';
+import projGrid from '../images/projects_Grid.png';
+import projAmbassadors from '../images/projects_Loweprofessionals.png';
+import projPicturOfLife from '../images/projects_PictureOfLife.png';
+import projShoppingAssistant from '../images/projects_ShoppingAssistant.png';
+import projMathSkills from '../images/projects_MathSkills.png';
 
 console.log(profile);
 
@@ -12,7 +24,7 @@ const data = [
         url: 'https://lit-ridge-16056.herokuapp.com/',
         description: 'App for logging daily outdoor and exercise activities.',
         tech: 'JavaScript, Firebase, APIs, CRUD functionalities, Bootstrap.',
-        image: 'https://via.placeholder.com/150x90',
+        image: projMyDailyLog,
         year: '2020'
     },
     {
@@ -21,7 +33,7 @@ const data = [
         url: 'https://feedr-80451.herokuapp.com/',
         description: 'Personalized news agregator app from various news sources.',
         tech: 'JavaScript, news APIs, search.',
-        image: '',
+        image: projFeedr,
         year: '2020'
     },
     {
@@ -30,7 +42,7 @@ const data = [
         url: 'https://www.lowepro.com/us-en/#quickfinder',
         description: 'App for quick navigation to a product series page on eCommerce site.',
         tech: 'JavaScript, HTML, CSS, SVG, Typo3 Flux.',
-        image: '',
+        image: projQuickfinder,
         year: '2017'
     },
     {
@@ -39,7 +51,7 @@ const data = [
         url: 'http://joby.com/us-en/',
         description: 'Responsive templates for product, category, shopping cart pages, tech specs feed, and marketing landing pages.',
         tech: 'Magento theming, HTML, CSS, PHP, Typo3 templating.',
-        image: '',
+        image: projJoby,
         year: '2017'
     },
     {
@@ -48,7 +60,7 @@ const data = [
         url: 'https://irinakramer.github.io/mega-menu/',
         description: 'Lightweight CSS menu for JOBY.com with CSS gradients, transitions, SVG icons, focus on performance and scalability.',
         tech: 'CSS, HTML, SVG animation',
-        image: '',
+        image: projJobyMenu,
         year: '2017',
         extra_text: 'Versions: ',
         extra_links: [
@@ -68,7 +80,7 @@ const data = [
         url: 'https://www.lowepro.com/us-en/',
         description: 'Magento eCommerce theme implementation for international brand, product and category pages, shopping cart optimization, all UI elements and rich content.',
         tech: 'Magento, PHP, JavaScript, HTML, CSS, APIs.',
-        image: '',
+        image: projLowepro,
         year: '2016'
     },
     {
@@ -77,7 +89,7 @@ const data = [
         url: 'http://blog.lowepro.com',
         description: 'Wordpress theme customizations according to brands style guidelines, new blog post template, old blogs migration to new.',
         tech: 'Wordpress, HTML, PHP, CSS',
-        image: '',
+        image: projLoweproBlog,
         year: '2016',
         extra_text: 'More: ',
         extra_links: [
@@ -93,7 +105,7 @@ const data = [
         url: 'https://codepen.io/irinakramer/pen/jcLlp',
         description: 'Lightweight, framework-independent, fully responsive grid in Flexbox.',
         tech: 'CSS, Flexbox, HTML',
-        image: '',
+        image: projGrid,
         year: '2014'
     },
     {
@@ -102,7 +114,7 @@ const data = [
         url: 'https://www.lowepro.com/us-en/loweprofessionals/',
         description: 'Landing pages built from PSD mockups to functional templates consisting of components.',
         tech: 'HTML, SCSS, JavaScript, Typo3 Flux and Fluid templating',
-        image: '',
+        image: projAmbassadors,
         year: '2018',
         extra_text: 'More brands: ',
         extra_links: [
@@ -130,7 +142,7 @@ const data = [
         url: 'https://www.manfrotto.com/it-it/experience/picture-of-life/',
         description: 'Components based landing page.',
         tech: 'HTML, JavaScript, SCSS, Typo3 templating',
-        image: '',
+        image: projPicturOfLife,
         year: '2019',
         extra_text: 'More: ',
         extra_links: [
@@ -146,7 +158,7 @@ const data = [
         url: 'https://www.manfrotto.com/us-en/shopping-assistant/',
         description: 'Landing page for sorting articles based on user selection.',
         tech: 'JavaScript, HTML, SCSS, Bootstrap, Typo3 Flux and Fluid templating',
-        image: '',
+        image: projShoppingAssistant,
         year: '2018'
     },
     {
@@ -155,7 +167,7 @@ const data = [
         url: 'https://github.com/jay-peretz/math_project',
         description: 'An online tutorial for learning pre-algebra and arithmetic, implemented directives for new problem sets, code maintenance.',
         tech: 'Angular JS, JavaScript, HTML, CSS',
-        image: '',
+        image: projMathSkills,
         year: '2013'
     }
 ];
@@ -190,7 +202,8 @@ const ProjectItem = ({ project }) => (
             <p>{project.description}
 
                 {project.extra_text &&
-                    <> <br />
+                    <>
+                        <br />
                         {project.extra_text}
                         <ExtraList extras={project.extra_links} />
                     </>
@@ -199,7 +212,7 @@ const ProjectItem = ({ project }) => (
                 <small>{project.tech}</small></p>
         </div>
         <div className="project__image">
-            <img src={project.image} />
+            <a href={project.url} target="_blank"><img src={project.image} /></a>
         </div>
     </div>
 );
