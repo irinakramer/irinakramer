@@ -186,19 +186,19 @@ const ProjectList = ({ projects }) => (
 const ExtraList = ({ extras }) => (
     <>
         {
-            extras.map(extra =>
-                <ExtraItem extra={extra} key={extra.id} />
+            extras.map((extra, index) =>
+                <ExtraItem extra={extra} key={index} />
             )
         }
     </>
 );
 const ExtraItem = ({ extra }) => (
-    <span className="project__extra"><a href={extra.url} target="_blank" rel="noreferrer">{extra.name}</a></span>
+    <span className="project__extra"><a href={extra.url} target="_blank" rel="noopener noreferrer">{extra.name}</a></span>
 )
 const ProjectItem = ({ project }) => (
     <div className="project">
         <div className="project__text">
-            <h3><a href={project.url} target="_blank" rel="noreferrer">{project.name}</a></h3>
+            <h3><a href={project.url} target="_blank" rel="noopener noreferrer">{project.name}</a></h3>
 
             <p>{project.description}
 
@@ -213,7 +213,7 @@ const ProjectItem = ({ project }) => (
                 <small>{project.tech}</small></p>
         </div>
         <div className="project__image">
-            <a href={project.url} target="_blank" rel="noreferrer"><img src={project.image} alt={project.name} /></a>
+            <a href={project.url} target="_blank" rel="noopener noreferrer"><img src={project.image} alt={project.name} /></a>
         </div>
     </div>
 );
