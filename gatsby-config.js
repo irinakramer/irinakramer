@@ -14,6 +14,7 @@ module.exports = {
     twitterUsername: "@irinakramer",
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
@@ -28,7 +29,6 @@ module.exports = {
           },
         ],
       },
-    },
-    [`gatsby-plugin-react-helmet`]
-  ]
+    }
+  ],
 }
