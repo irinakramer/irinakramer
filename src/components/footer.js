@@ -4,7 +4,7 @@ export default () => (
     <div className="footer">
         {/* <p>Remember to SMASH that like button!</p> */}
         <p>Copyright © 2020 Irina Kramer<br />
-            <small>Built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted on <a href="https://www.netlify.com/">Netlify</a></small></p>
+            <small>Built with <a href="https://www.gatsbyjs.org/" target="_blank" rel="noreferrer">Gatsby</a> and hosted on <a href="https://www.netlify.com/" target="_blank" rel="noreferrer">Netlify</a></small></p>
 
         {/* <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> */}
 

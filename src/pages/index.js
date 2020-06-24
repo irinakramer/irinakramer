@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from "react-helmet";
 import Layout from '../components/layout';
 import '../styles/index.css';
 import profile from '../images/irina.jpg';
@@ -192,12 +193,12 @@ const ExtraList = ({ extras }) => (
     </>
 );
 const ExtraItem = ({ extra }) => (
-    <span className="project__extra"><a href={extra.url} target="_blank">{extra.name}</a></span>
+    <span className="project__extra"><a href={extra.url} target="_blank" rel="noreferrer">{extra.name}</a></span>
 )
 const ProjectItem = ({ project }) => (
     <div className="project">
         <div className="project__text">
-            <h3><a href={project.url} target="_blank">{project.name}</a></h3>
+            <h3><a href={project.url} target="_blank" rel="noreferrer">{project.name}</a></h3>
 
             <p>{project.description}
 
@@ -212,7 +213,7 @@ const ProjectItem = ({ project }) => (
                 <small>{project.tech}</small></p>
         </div>
         <div className="project__image">
-            <a href={project.url} target="_blank"><img src={project.image} /></a>
+            <a href={project.url} target="_blank" rel="noreferrer"><img src={project.image} alt={project.name} /></a>
         </div>
     </div>
 );
@@ -220,6 +221,12 @@ const ProjectItem = ({ project }) => (
 
 export default () => (
     <Layout>
+        <Helmet>
+            <html lang="en" />
+            <title>Irina Kramer - Front End Web Developer</title>
+            <meta name="title" content="Irina Kramer - Front End Web Developer" />
+            <meta name="description" content="Personal/portfolio website for Irina Kramer, frontend web developer with focus on ecommerce, enterprise websites and apps." />
+        </Helmet>
         <section className="intro">
             <img src={profile} alt="Irina Kramer" />
             <p>Hi there. I'm Irina Kramer, a frontend web developer. My current tech stack is React, JavaScript, APIs, HTML, CSS.  I've been in the web industry for over 15 years, worked at Fortune 100, medium and start-up companies. I specialize in bulding large enterprise and eCommerce websites and apps with focus on optimal user experience and performance. I live in Petaluma, California and like spending my free time enjoying local life, travel and photography.</p>
