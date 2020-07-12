@@ -31,7 +31,8 @@ const data = [
     {
         id: 2,
         name: 'News Feedr',
-        url: 'https://feedr-80451.herokuapp.com/',
+        url: 'https://github.com/irinakramer/Feedr',
+        //url: 'https://feedr-80451.herokuapp.com/',
         description: 'Personalized news agregator app from various news sources.',
         tech: 'JavaScript, news APIs, search.',
         image: projFeedr,
