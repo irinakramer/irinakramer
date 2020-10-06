@@ -41,11 +41,11 @@ const data = [
     {
         id: 3,
         name: 'Lowepro Quickfinder',
-        url: 'https://www.lowepro.com/us-en/#quickfinder',
+        url: 'https://quickfinder.netlify.app/',
         description: 'App for quick navigation to a product series page on eCommerce site.',
         tech: 'JavaScript, HTML, CSS, SVG, Typo3 Flux.',
         image: projQuickfinder,
-        year: '2017'
+        year: '2017-2020'
     },
     {
         id: 4,
@@ -230,7 +230,7 @@ export default () => (
         </Helmet>
         <section className="intro">
             <img src={profile} alt="Irina Kramer" />
-            <p>Hi there. I'm Irina Kramer, a frontend web developer. My current tech stack is React, JavaScript, APIs, HTML, CSS.  I've been in the web industry for over 15 years, worked at Fortune 100, medium and start-up companies. I specialize in bulding large enterprise and eCommerce websites and apps with focus on optimal user experience and performance. I live in Petaluma, California and like spending my free time enjoying local life, travel and photography.</p>
+            <p>Hi there. I'm Irina Kramer, a frontend web developer. My current tech stack is JavaScript, React, APIs, HTML, CSS.  I've been in the web industry for over 15 years, worked at Fortune 100, medium and start-up companies. I specialize in bulding large enterprise and eCommerce websites and apps with focus on optimal user experience and performance. I live in Petaluma, California and like spending my free time enjoying local life, travel and photography.</p>
         </section>
         <section>
             <a name="projects"></a>
