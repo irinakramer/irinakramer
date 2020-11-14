@@ -21,97 +21,40 @@ console.log(profile);
 const data = [
     {
         id: 1,
-        name: 'My Daily Log',
-        url: 'https://lit-ridge-16056.herokuapp.com/',
-        description: 'App for logging daily outdoor and exercise activities.',
-        tech: 'JavaScript, Firebase, APIs, CRUD functionalities, Bootstrap.',
-        image: projMyDailyLog,
-        year: '2020'
+        name: 'Math Skills Tutorial',
+        url: 'https://github.com/jay-peretz/math_project',
+        description: 'An online tutorial for learning pre-algebra and arithmetic, implemented directives for new problem sets, code maintenance.',
+        tech: 'Angular JS, JavaScript, HTML, CSS',
+        image: projMathSkills,
+        year: '2013'
     },
     {
         id: 2,
-        name: 'News Feedr',
-        url: 'https://github.com/irinakramer/Feedr',
-        //url: 'https://feedr-80451.herokuapp.com/',
-        description: 'Personalized news agregator app from various news sources.',
-        tech: 'JavaScript, news APIs, search.',
-        image: projFeedr,
-        year: '2020'
+        name: 'Shopping Assistant',
+        url: 'https://www.manfrotto.com/us-en/shopping-assistant/',
+        description: 'Landing page for sorting articles based on user selection.',
+        tech: 'JavaScript, HTML, SCSS, Bootstrap, Typo3 Flux and Fluid templating',
+        image: projShoppingAssistant,
+        year: '2018'
     },
     {
         id: 3,
-        name: 'Lowepro Quickfinder',
-        url: 'https://quickfinder.netlify.app/',
-        description: 'App for quick navigation to a product series page on eCommerce site.',
-        tech: 'JavaScript, HTML, CSS, SVG, Typo3 Flux.',
-        image: projQuickfinder,
-        year: '2017-2020'
-    },
-    {
-        id: 4,
-        name: 'JOBY.com eCommerce site',
-        url: 'http://joby.com/us-en/',
-        description: 'Responsive templates for product, category, shopping cart pages, tech specs feed, and marketing landing pages.',
-        tech: 'Magento theming, HTML, CSS, PHP, Typo3 templating.',
-        image: projJoby,
-        year: '2017'
-    },
-    {
-        id: 5,
-        name: 'Responsive Mega Menu',
-        url: 'https://irinakramer.github.io/mega-menu/',
-        description: 'Lightweight CSS menu for JOBY.com with CSS gradients, transitions, SVG icons, focus on performance and scalability.',
-        tech: 'CSS, HTML, SVG animation',
-        image: projJobyMenu,
-        year: '2017',
-        extra_text: 'Versions: ',
-        extra_links: [
-            {
-                name: 'Desktop',
-                url: 'https://irinakramer.github.io/mega-menu/'
-            },
-            {
-                name: 'Mobile',
-                url: 'https://irinakramer.github.io/mega-menu/mobile.html'
-            }
-        ]
-    },
-    {
-        id: 6,
-        name: 'Lowepro eCommerce site',
-        url: 'https://www.lowepro.com/us-en/',
-        description: 'Magento eCommerce theme implementation for international brand, product and category pages, shopping cart optimization, all UI elements and rich content.',
-        tech: 'Magento, PHP, JavaScript, HTML, CSS, APIs.',
-        image: projLowepro,
-        year: '2016'
-    },
-    {
-        id: 7,
-        name: 'Lowepro Blog',
-        url: 'http://blog.lowepro.com',
-        description: 'Wordpress theme customizations according to brands style guidelines, new blog post template, old blogs migration to new.',
-        tech: 'Wordpress, HTML, PHP, CSS',
-        image: projLoweproBlog,
-        year: '2016',
+        name: 'Picture of Life',
+        url: 'https://www.manfrotto.com/it-it/experience/picture-of-life/',
+        description: 'Components based landing page.',
+        tech: 'HTML, JavaScript, SCSS, Typo3 templating',
+        image: projPicturOfLife,
+        year: '2019',
         extra_text: 'More: ',
         extra_links: [
             {
-                name: 'JOBY blog',
-                url: 'http://blog.joby.com'
+                name: 'Capture Life',
+                url: 'https://www.lowepro.com/us-en/about-us/'
             }
         ]
     },
     {
-        id: 8,
-        name: 'Responsive Grid with Flexbox',
-        url: 'https://codepen.io/irinakramer/pen/jcLlp',
-        description: 'Lightweight, framework-independent, fully responsive grid in Flexbox.',
-        tech: 'CSS, Flexbox, HTML',
-        image: projGrid,
-        year: '2014'
-    },
-    {
-        id: 9,
+        id: 4,
         name: 'Brand Ambassadors',
         url: 'https://www.lowepro.com/us-en/loweprofessionals/',
         description: 'Landing pages built from PSD mockups to functional templates consisting of components.',
@@ -139,45 +82,103 @@ const data = [
         ]
     },
     {
-        id: 10,
-        name: 'Picture of Life',
-        url: 'https://www.manfrotto.com/it-it/experience/picture-of-life/',
-        description: 'Components based landing page.',
-        tech: 'HTML, JavaScript, SCSS, Typo3 templating',
-        image: projPicturOfLife,
-        year: '2019',
+        id: 5,
+        name: 'Responsive Grid with Flexbox',
+        url: 'https://codepen.io/irinakramer/pen/jcLlp',
+        description: 'Lightweight, framework-independent, fully responsive grid in Flexbox.',
+        tech: 'CSS, Flexbox, HTML',
+        image: projGrid,
+        year: '2014'
+    },
+    {
+        id: 6,
+        name: 'Lowepro Blog',
+        url: 'http://blog.lowepro.com',
+        description: 'Wordpress theme customizations according to brands style guidelines, new blog post template, old blogs migration to new.',
+        tech: 'Wordpress, HTML, PHP, CSS',
+        image: projLoweproBlog,
+        year: '2016',
         extra_text: 'More: ',
         extra_links: [
             {
-                name: 'Capture Life',
-                url: 'https://www.lowepro.com/us-en/about-us/'
+                name: 'JOBY blog',
+                url: 'http://blog.joby.com'
             }
         ]
     },
     {
+        id: 7,
+        name: 'Lowepro eCommerce site',
+        url: 'https://www.lowepro.com/us-en/',
+        description: 'Magento eCommerce theme implementation for international brand, product and category pages, shopping cart optimization, all UI elements and rich content.',
+        tech: 'Magento, PHP, JavaScript, HTML, CSS, APIs.',
+        image: projLowepro,
+        year: '2016'
+    },
+    {
+        id: 8,
+        name: 'Responsive Mega Menu',
+        url: 'https://irinakramer.github.io/mega-menu/',
+        description: 'Lightweight CSS menu for JOBY.com with CSS gradients, transitions, SVG icons, focus on performance and scalability.',
+        tech: 'CSS, HTML, SVG animation',
+        image: projJobyMenu,
+        year: '2017',
+        extra_text: 'Versions: ',
+        extra_links: [
+            {
+                name: 'Desktop',
+                url: 'https://irinakramer.github.io/mega-menu/'
+            },
+            {
+                name: 'Mobile',
+                url: 'https://irinakramer.github.io/mega-menu/mobile.html'
+            }
+        ]
+    },
+    {
+        id: 9,
+        name: 'JOBY.com eCommerce site',
+        url: 'http://joby.com/us-en/',
+        description: 'Responsive templates for product, category, shopping cart pages, tech specs feed, and marketing landing pages.',
+        tech: 'Magento theming, HTML, CSS, PHP, Typo3 templating.',
+        image: projJoby,
+        year: '2017'
+    },
+    {
+        id: 10,
+        name: 'Lowepro Quickfinder',
+        url: 'https://quickfinder.netlify.app/',
+        description: 'App for quick navigation to a product series page on eCommerce site.',
+        tech: 'JavaScript, HTML, CSS, SVG, Typo3 Flux.',
+        image: projQuickfinder,
+        year: '2017-2020'
+    },
+    {
         id: 11,
-        name: 'Shopping Assistant',
-        url: 'https://www.manfrotto.com/us-en/shopping-assistant/',
-        description: 'Landing page for sorting articles based on user selection.',
-        tech: 'JavaScript, HTML, SCSS, Bootstrap, Typo3 Flux and Fluid templating',
-        image: projShoppingAssistant,
-        year: '2018'
+        name: 'News Feedr',
+        url: 'https://github.com/irinakramer/Feedr',
+        //url: 'https://feedr-80451.herokuapp.com/',
+        description: 'Personalized news agregator app from various news sources.',
+        tech: 'JavaScript, news APIs, search.',
+        image: projFeedr,
+        year: '2020'
     },
     {
         id: 12,
-        name: 'Math Skills Tutorial',
-        url: 'https://github.com/jay-peretz/math_project',
-        description: 'An online tutorial for learning pre-algebra and arithmetic, implemented directives for new problem sets, code maintenance.',
-        tech: 'Angular JS, JavaScript, HTML, CSS',
-        image: projMathSkills,
-        year: '2013'
+        name: 'My Daily Log',
+        url: 'https://lit-ridge-16056.herokuapp.com/',
+        description: 'App for logging daily outdoor and exercise activities.',
+        tech: 'JavaScript, Firebase, APIs, CRUD functionalities, Bootstrap.',
+        image: projMyDailyLog,
+        year: '2020'
     }
+
 ];
 
 const ProjectList = ({ projects }) => (
     <>
         {
-            projects.map(project => (
+            projects.slice(0).reverse().map(project => (
                 <ProjectItem project={project} key={project.id} />
             ))
         }
