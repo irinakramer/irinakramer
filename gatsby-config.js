@@ -6,10 +6,11 @@
 
 module.exports = {
   siteMetadata: {
-    title: "Irina Kramer - Frontend Developer",
+    title: "Irina Kramer - Frontend Engineer",
     description:
-      "Front End Web Developer, ecommerce and enterprise sites, web apps, UI components.",
+      "Building ecommerce and enterprise sites, personalized web apps, UI components.",
     url: "https://www.irinakramer.com",
+    author: 'irinakramer',
     image: "/images/irina.jpg",
     twitterUsername: "@irinakramer",
   },

@@ -234,13 +234,14 @@ export default () => (
     <Layout>
         <Helmet>
             <html lang="en" />
-            <title>Irina Kramer - Front End Web Developer</title>
-            <meta name="title" content="Irina Kramer - Front End Web Developer" />
+            <title>Irina Kramer - Front End Engineer</title>
+            <meta name="title" content="Irina Kramer - Front End Web Developer, Engineer" />
             <meta name="description" content="Personal/portfolio website for Irina Kramer, frontend web developer with focus on ecommerce, enterprise websites and apps." />
         </Helmet>
+
         <section className="intro">
             <img src={profile} alt="Irina Kramer" />
-            <p>Hi there. I'm Irina Kramer, a frontend web developer. My current tech stack is JavaScript, React, APIs, HTML, CSS.  I've been in the web industry for over 15 years, worked at Fortune 100, medium and start-up companies. I specialize in bulding large enterprise and eCommerce websites and apps with focus on optimal user experience and performance. I live in Petaluma, California and like spending my free time enjoying local life, travel and photography.</p>
+            <p>Hi there. I'm Irina Kramer, a frontend web developer. My current tech stack is JavaScript, React, APIs, HTML, CSS.  I've been in the web industry for over 15 years, worked at Fortune 100, medium and start-up companies. I contributed to large enterprise and eCommerce websites and apps, focusing on optimal user experience and performance. Currently I build personalized full stack web apps. I live in Petaluma, California and like spending my free time enjoying local life, travel and photography.</p>
         </section>
         <section>
             <a name="projects"></a>
