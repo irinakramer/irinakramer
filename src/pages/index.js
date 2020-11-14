@@ -3,6 +3,7 @@ import Helmet from "react-helmet";
 import Layout from '../components/layout';
 import '../styles/index.css';
 import profile from '../images/irina.jpg';
+import projEvaluateNews from '../images/projects_EvaluateNews.png';
 import projMyDailyLog from '../images/projects_MyDailyLog.png';
 import projFeedr from '../images/projects_Feedr.png';
 import projQuickfinder from '../images/projects_Quickfinder.png';
@@ -157,7 +158,6 @@ const data = [
         id: 11,
         name: 'News Feedr',
         url: 'https://github.com/irinakramer/Feedr',
-        //url: 'https://feedr-80451.herokuapp.com/',
         description: 'Personalized news agregator app from various news sources.',
         tech: 'JavaScript, news APIs, search.',
         image: projFeedr,
@@ -170,6 +170,15 @@ const data = [
         description: 'App for logging daily outdoor and exercise activities.',
         tech: 'JavaScript, Firebase, APIs, CRUD functionalities, Bootstrap.',
         image: projMyDailyLog,
+        year: '2020'
+    },
+    {
+        id: 13,
+        name: 'Evaluate News with NLP',
+        url: 'https://evaluate-news-nlp-17.netlify.app/',
+        description: 'App to check an article for sentiment such as positivity, subjectivity and irony.',
+        tech: 'JavaScript, Node, Express, Webpack, SCSS, MeaningCloud API.',
+        image: projEvaluateNews,
         year: '2020'
     }
 
