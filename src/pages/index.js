@@ -234,14 +234,26 @@ export default () => (
     <Layout>
         <Helmet>
             <html lang="en" />
-            <title>Irina Kramer - Front End Engineer</title>
-            <meta name="title" content="Irina Kramer - Front End Web Developer, Engineer" />
+            <title>Irina Kramer - Frontend Engineer</title>
+            <meta name="title" content="Irina Kramer - Frontend Web Engineer, Web Developer" />
             <meta name="description" content="Personal/portfolio website for Irina Kramer, frontend web developer with focus on ecommerce, enterprise websites and apps." />
+            <meta name="twitter:card" content="summary" />
+            <meta name="twitter:site" content="@irinakramer" />
+            <meta name="twitter:title" content="Irina Kramer - Frontend Engineer" />
+            <meta name="twitter:description"
+                content="Personal/portfolio website for Irina Kramer, frontend web developer with focus on ecommerce, enterprise websites and apps." />
+            <meta name="twitter:image" content={profile} />
+            <meta property="og:title" content="Irina Kramer - Frontend Engineer" />
+            <meta property="og:description"
+                content="Personal/portfolio website for Irina Kramer, frontend web developer with focus on ecommerce, enterprise websites and apps." />
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content="https://www.irinakramer.com/" />
+            <meta property="og:image" content={profile} />
         </Helmet>
 
         <section className="intro">
             <img src={profile} alt="Irina Kramer" />
-            <p>Hi there. I'm Irina Kramer, a frontend web developer. My current tech stack is JavaScript, React, APIs, HTML, CSS.  I've been in the web industry for over 15 years, worked at Fortune 100, medium and start-up companies. I contributed to large enterprise and eCommerce websites and apps, focusing on optimal user experience and performance. Currently I build personalized full stack web apps. I live in Petaluma, California and like spending my free time enjoying local life, travel and photography.</p>
+            <p>Hi there. I'm Irina Kramer, a frontend web developer. My current tech stack is JavaScript, React, APIs, HTML, CSS.  I've been in the web industry for over 15 years, worked at Fortune 100, medium and start-up companies. I contributed to large enterprise and eCommerce websites and apps, focusing on optimal user experience and performance. Currently I build personalized full-stack web apps. I live in Petaluma, California and like spending my free time enjoying local life, travel and photography.</p>
         </section>
         <section>
             <a name="projects"></a>
