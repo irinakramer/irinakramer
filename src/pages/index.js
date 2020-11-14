@@ -224,7 +224,7 @@ const ProjectItem = ({ project }) => (
                 <small>{project.tech}</small></p>
         </div>
         <div className="project__image">
-            <a href={project.url} target="_blank" rel="noopener noreferrer"><img src={project.image} alt={project.name} /></a>
+            <a href={project.url} target="_blank" rel="noopener noreferrer"><img src={project.image} width="150" height="90" alt={project.name} /></a>
         </div>
     </div>
 );
