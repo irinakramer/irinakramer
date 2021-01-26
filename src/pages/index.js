@@ -175,7 +175,7 @@ const data = [
     {
         id: 13,
         name: 'Evaluate News with NLP',
-        url: 'https://evaluate-news-nlp-17.netlify.app/',
+        url: 'https://evaluate-news-86914.herokuapp.com/',
         description: 'App to check an article for sentiment such as positivity, subjectivity and irony.',
         tech: 'JavaScript, Node, Express, Webpack, SCSS, MeaningCloud API.',
         image: projEvaluateNews,
