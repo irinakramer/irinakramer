@@ -256,12 +256,12 @@ export default () => (
             <p>Hi there. I'm Irina Kramer, a frontend web developer. My current tech stack is JavaScript, React, APIs, HTML, CSS.  I've been in the web industry for over 15 years, worked at Fortune 100, medium and start-up companies. I contributed to large enterprise and eCommerce websites and apps, focusing on optimal user experience and performance. Currently I build personalized full-stack web apps. I live in Petaluma, California and like spending my free time enjoying local life, travel and photography.</p>
         </section>
         <section>
-            <a name="projects"></a>
+            <span id="projects"></span>
             <h2>Projects &amp; Portfolio</h2>
             <ProjectList projects={data} />
         </section>
         <section>
-            <a name="contact"></a>
+            <span id="contact"></span>
             <h2>Contact</h2>
             <p>You can send me an <a href="mailto:irakramer@gmail.com">email</a> or contact me via <a href="https://www.linkedin.com/in/irinakramer/">LinkedIn</a>. Thanks for visiting!</p>
             <br /><br />
