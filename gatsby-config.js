@@ -23,17 +23,10 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          {
-            family: `Lato`,
-            variants: [`300`, `700`]
-          },
-          {
-            family: `Lato`,
-            subsets: [`latin`]
-          },
+          `Lato\:300, 700`,
         ],
       },
     }
