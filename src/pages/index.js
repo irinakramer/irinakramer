@@ -16,6 +16,7 @@ import projAmbassadors from '../images/projects_Loweprofessionals.png';
 import projPicturOfLife from '../images/projects_PictureOfLife.png';
 import projShoppingAssistant from '../images/projects_ShoppingAssistant.png';
 import projMathSkills from '../images/projects_MathSkills.png';
+import projTravelApp from '../images/projects_TravelApp.png';
 
 console.log(profile);
 
@@ -179,6 +180,15 @@ const data = [
         description: 'App to check an article for sentiment such as positivity, subjectivity and irony.',
         tech: 'JavaScript, Node, Express, Webpack, SCSS, MeaningCloud API.',
         image: projEvaluateNews,
+        year: '2020'
+    },
+    {
+        id: 14,
+        name: 'Travel Planner',
+        url: 'http://travel-app-17.herokuapp.com/',
+        description: 'This app takes user destination city and departure date to return photo of the city and weather forecast for that date.',
+        tech: 'JavaScript, Node, Express, Webpack, SCSS, APIs: Geonamens, Weatherbit, Pixabay',
+        image: projTravelApp,
         year: '2020'
     }
 
