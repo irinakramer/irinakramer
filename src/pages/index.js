@@ -17,6 +17,7 @@ import projPicturOfLife from '../images/projects_PictureOfLife.png';
 import projShoppingAssistant from '../images/projects_ShoppingAssistant.png';
 import projMathSkills from '../images/projects_MathSkills.png';
 import projTravelApp from '../images/projects_TravelApp.png';
+import projBouquet from '../images/projects_Bouquet.png';
 
 console.log(profile);
 
@@ -168,8 +169,8 @@ const data = [
         id: 12,
         name: 'My Daily Log',
         url: 'https://lit-ridge-16056.herokuapp.com/',
-        description: 'App for logging daily outdoor and exercise activities.',
-        tech: 'JavaScript, Firebase, APIs, CRUD functionalities, Bootstrap.',
+        description: 'App for logging daily outdoor and exercise activities. Full CRUD app.',
+        tech: 'JavaScript, Firebase, Weather API, Bootstrap.',
         image: projMyDailyLog,
         year: '2020'
     },
@@ -190,6 +191,15 @@ const data = [
         tech: 'JavaScript, Node, Express, Webpack, SCSS, APIs: Geonamens, Weatherbit, Pixabay',
         image: projTravelApp,
         year: '2020'
+    },
+    {
+        id: 15,
+        name: 'Bouquet - Wine Tasting App',
+        url: 'https://bouquet-wine-tasting.herokuapp.com/',
+        description: 'This app is a guide to help you identify aromas and scents present in most wine families. Full CRUD app.',
+        tech: 'React, Material UI, GeoCharts API, Back4App',
+        image: projBouquet,
+        year: '2021'
     }
 
 ];
@@ -263,7 +273,7 @@ export default () => (
 
         <section className="intro">
             <img src={profile} alt="Irina Kramer" />
-            <p>Hi there. I'm Irina Kramer, a frontend web developer. My current tech stack is JavaScript, React, APIs, HTML, CSS.  I've been in the web industry for over 15 years, worked at Fortune 100, medium and start-up companies. I contributed to large enterprise and eCommerce websites and apps, focusing on optimal user experience and performance. Currently I build personalized full-stack web apps. I live in Petaluma, California and like spending my free time enjoying local life, travel and photography.</p>
+            <p>Hi there. I'm Irina Kramer, a frontend web developer.  I've been in the web industry for over 15 years, worked at Fortune 100 (Intel), start-ups, medium companies and non-profits. I contributed to hundreds of enterprise and eCommerce websites and apps, focusing on optimal user experience and performance. My tech stack is JavaScript/ES6, React, REST APIs, HTML, CSS/SCSS, Magento eCommerce.  Currently I build personalized full-stack web apps and learn new things. I live in Petaluma, California and like spending my free time enjoying local life, travel and photography.</p>
         </section>
         <section>
             <span id="projects"></span>
@@ -277,4 +287,4 @@ export default () => (
             <br /><br />
         </section>
     </Layout>
-) 
+)

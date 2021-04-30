@@ -11,7 +11,6 @@ export default (props) => (
         <ul className="header__menu">
             <li><Link to="/"><FontAwesomeIcon icon={['fas', 'home']} size="lg" /></Link></li>
             <li><Link to="/#projects">Projects</Link></li>
-            <li><Link to="/Irina_Kramer_Resume_2021.pdf">Resume</Link></li>
             <li><Link to="/#contact">Contact</Link></li>
         </ul>
         <ul className="header__social">
