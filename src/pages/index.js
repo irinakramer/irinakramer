@@ -40,22 +40,22 @@ const data = [
         image: projShoppingAssistant,
         year: '2018'
     },
-    {
-        id: 3,
-        name: 'Picture of Life',
-        url: 'https://www.manfrotto.com/it-it/experience/picture-of-life/',
-        description: 'Components based landing page.',
-        tech: 'HTML, JavaScript, SCSS, Typo3 templating',
-        image: projPicturOfLife,
-        year: '2019',
-        extra_text: 'More: ',
-        extra_links: [
-            {
-                name: 'Capture Life',
-                url: 'https://www.lowepro.com/us-en/about-us/'
-            }
-        ]
-    },
+    // {
+    //     id: 3,
+    //     name: 'Picture of Life',
+    //     url: 'https://www.manfrotto.com/it-it/experience/picture-of-life/',
+    //     description: 'Components based landing page.',
+    //     tech: 'HTML, JavaScript, SCSS, Typo3 templating',
+    //     image: projPicturOfLife,
+    //     year: '2019',
+    //     extra_text: 'More: ',
+    //     extra_links: [
+    //         {
+    //             name: 'Capture Life',
+    //             url: 'https://www.lowepro.com/us-en/about-us/'
+    //         }
+    //     ]
+    // },
     {
         id: 4,
         name: 'Brand Ambassadors',
@@ -174,15 +174,15 @@ const data = [
         image: projMyDailyLog,
         year: '2020'
     },
-    {
-        id: 13,
-        name: 'Evaluate News with NLP',
-        url: 'https://github.com/irinakramer/evaluate-news-nlp',
-        description: 'App to check an article for sentiment such as positivity, subjectivity and irony.',
-        tech: 'JavaScript, Node, Express, Webpack, SCSS, MeaningCloud API.',
-        image: projEvaluateNews,
-        year: '2020'
-    },
+    // {
+    //     id: 13,
+    //     name: 'Evaluate News with NLP',
+    //     url: 'https://github.com/irinakramer/evaluate-news-nlp',
+    //     description: 'App to check an article for sentiment such as positivity, subjectivity and irony.',
+    //     tech: 'JavaScript, Node, Express, Webpack, SCSS, MeaningCloud API.',
+    //     image: projEvaluateNews,
+    //     year: '2020'
+    // },
     {
         id: 14,
         name: 'Travel Planner',
@@ -273,7 +273,7 @@ export default () => (
 
         <section className="intro">
             <img src={profile} alt="Irina Kramer" />
-            <p>Hi there. I'm Irina Kramer, a frontend web developer.  I've been in the web industry for over 15 years, worked at Fortune 100 (Intel), start-ups, medium companies and non-profits. I contributed to hundreds of enterprise and eCommerce websites and apps, focusing on optimal user experience and performance. My tech stack is JavaScript/ES6, React, REST APIs, HTML, CSS/SCSS, Magento eCommerce.  Currently I build personalized full-stack web apps and learn new things. I live in Petaluma, California and like spending my free time enjoying local life, travel and photography.</p>
+            <p>Hi there. I'm Irina Kramer, a frontend web developer.  I've been in the web industry for over 15 years, worked at Fortune 100 (Intel), start-ups, medium companies and non-profits. I contributed to hundreds of enterprise and eCommerce websites and web apps, focusing on optimal user experience and performance. My tech stack is JavaScript/ES6, React, REST APIs, HTML, CSS/SCSS.  Currently I'm at a fintech company building internal tools. I live in Petaluma, California and like spending my free time enjoying local life, travel and photography.</p>
         </section>
         <section>
             <span id="projects"></span>

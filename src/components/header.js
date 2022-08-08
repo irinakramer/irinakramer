@@ -18,7 +18,7 @@ export default (props) => (
             <li><a href="https://www.hackerrank.com/irinakramer" aria-label="Hackerrank"><FontAwesomeIcon icon={['fab', 'hackerrank']} size="lg" /></a></li>
             <li><a href="https://www.linkedin.com/in/irinakramer/" aria-label="LinkedIn"><FontAwesomeIcon icon={['fab', 'linkedin-in']} size="lg" /></a></li>
             <li><a href="https://www.instagram.com/irinakramer_/" aria-label="Instagram"><FontAwesomeIcon icon={['fab', 'instagram']} size="lg" /></a></li>
-            <li><a href="https://twitter.com/irinakramer" aria-label="Twitter"><FontAwesomeIcon icon={['fab', 'twitter']} size="lg" /></a></li>
+            {/* <li><a href="https://twitter.com/irinakramer" aria-label="Twitter"><FontAwesomeIcon icon={['fab', 'twitter']} size="lg" /></a></li> */}
         </ul>
     </div>
 )
