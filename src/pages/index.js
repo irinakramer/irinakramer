@@ -3,9 +3,6 @@ import Helmet from "react-helmet";
 import Layout from '../components/layout';
 import '../styles/index.css';
 import profile from '../images/irina.jpg';
-//import projEvaluateNews from '../images/projects_EvaluateNews.png';
-import projMyDailyLog from '../images/projects_MyDailyLog.png';
-import projFeedr from '../images/projects_Feedr.png';
 import projQuickfinder from '../images/projects_Quickfinder.png';
 import projJoby from '../images/projects_JOBY.png';
 import projJobyMenu from '../images/projects_JOBYmenu.png';
@@ -13,13 +10,9 @@ import projLowepro from '../images/projects_Lowepro.png';
 import projLoweproBlog from '../images/projects_LoweproBlog.png';
 import projGrid from '../images/projects_Grid.png';
 import projAmbassadors from '../images/projects_Loweprofessionals.png';
-//import projPicturOfLife from '../images/projects_PictureOfLife.png';
 import projShoppingAssistant from '../images/projects_ShoppingAssistant.png';
 import projMathSkills from '../images/projects_MathSkills.png';
-import projTravelApp from '../images/projects_TravelApp.png';
 import projBouquet from '../images/projects_Bouquet.png';
-
-console.log(profile);
 
 const data = [
     {
@@ -40,22 +33,6 @@ const data = [
         image: projShoppingAssistant,
         year: '2018'
     },
-    // {
-    //     id: 3,
-    //     name: 'Picture of Life',
-    //     url: 'https://www.manfrotto.com/it-it/experience/picture-of-life/',
-    //     description: 'Components based landing page.',
-    //     tech: 'HTML, JavaScript, SCSS, Typo3 templating',
-    //     image: projPicturOfLife,
-    //     year: '2019',
-    //     extra_text: 'More: ',
-    //     extra_links: [
-    //         {
-    //             name: 'Capture Life',
-    //             url: 'https://www.lowepro.com/us-en/about-us/'
-    //         }
-    //     ]
-    // },
     {
         id: 4,
         name: 'Brand Ambassadors',
@@ -116,7 +93,7 @@ const data = [
         description: 'Magento eCommerce theme implementation for international brand, product and category pages, shopping cart optimization, all UI elements and rich content.',
         tech: 'Magento, PHP, JavaScript, HTML, CSS, APIs.',
         image: projLowepro,
-        year: '2016'
+        year: '2019'
     },
     {
         id: 8,
@@ -145,7 +122,7 @@ const data = [
         description: 'Responsive templates for product, category, shopping cart pages, tech specs feed, and marketing landing pages.',
         tech: 'Magento theming, HTML, CSS, PHP, Typo3 templating.',
         image: projJoby,
-        year: '2017'
+        year: '2019'
     },
     {
         id: 10,
@@ -154,43 +131,7 @@ const data = [
         description: 'App for quick navigation to a product series page on eCommerce site.',
         tech: 'JavaScript, HTML, CSS, SVG, Typo3 Flux.',
         image: projQuickfinder,
-        year: '2017-2020'
-    },
-    {
-        id: 11,
-        name: 'News Feedr',
-        url: 'https://feedr-80451.herokuapp.com/',
-        description: 'Personalized news agregator app from various news sources.',
-        tech: 'JavaScript, news APIs, search.',
-        image: projFeedr,
-        year: '2020'
-    },
-    {
-        id: 12,
-        name: 'My Daily Log',
-        url: 'https://lit-ridge-16056.herokuapp.com/',
-        description: 'App for logging daily outdoor and exercise activities. Full CRUD app.',
-        tech: 'JavaScript, Firebase, Weather API, Bootstrap.',
-        image: projMyDailyLog,
-        year: '2020'
-    },
-    // {
-    //     id: 13,
-    //     name: 'Evaluate News with NLP',
-    //     url: 'https://github.com/irinakramer/evaluate-news-nlp',
-    //     description: 'App to check an article for sentiment such as positivity, subjectivity and irony.',
-    //     tech: 'JavaScript, Node, Express, Webpack, SCSS, MeaningCloud API.',
-    //     image: projEvaluateNews,
-    //     year: '2020'
-    // },
-    {
-        id: 14,
-        name: 'Travel Planner',
-        url: 'http://travel-app-17.herokuapp.com/',
-        description: 'This app takes user destination city and departure date to return photo of the city and weather forecast for that date.',
-        tech: 'JavaScript, Node, Express, Webpack, SCSS, APIs: Geonamens, Weatherbit, Pixabay',
-        image: projTravelApp,
-        year: '2020'
+        year: '2017'
     },
     {
         id: 15,
@@ -213,7 +154,6 @@ const ProjectList = ({ projects }) => (
         }
     </>
 );
-// map over extras
 const ExtraList = ({ extras }) => (
     <>
         {
@@ -241,7 +181,9 @@ const ProjectItem = ({ project }) => (
                     </>
                 }
                 <br />
-                <small>{project.tech}</small></p>
+                <small>{project.tech}</small>
+                <br/>
+                <small> {project.year}</small></p>
         </div>
         <div className="project__image">
             <a href={project.url} target="_blank" rel="noopener noreferrer"><img src={project.image} width="150" height="90" alt={project.name} /></a>
@@ -273,18 +215,22 @@ export default () => (
 
         <section className="intro">
             <img src={profile} alt="Irina Kramer" />
-            <p>Hi there. I'm Irina Kramer, a frontend web developer.  I've been in the web industry for over 15 years, worked at Fortune 100 (Intel), start-ups, medium companies and non-profits. I contributed to hundreds of enterprise and eCommerce websites and web apps, focusing on optimal user experience and performance. My tech stack is JavaScript/ES6, React, REST APIs, HTML, CSS/SCSS.  Currently I'm at a fintech company building internal tools. I live in Petaluma, California and like spending my free time enjoying local life, travel and photography.</p>
+            <p>Hi there. I'm Irina Kramer, a frontend web developer.  I've been in the web industry for over 15 years, worked at Fortune 100 (Intel), start-ups, medium companies and non-profits. I contributed to hundreds of enterprise and eCommerce websites and web apps, focusing on optimal user experience and performance. My tech stack is JavaScript/ES6, React, REST/GraphQL APIs, MySQL, HTML, CSS/SCSS.  Currently I'm at a fintech company <a href="https://www.smartbizloans.com/">SmartBiz</a> building internal tools. I live in Petaluma, California and like spending my free time enjoying local life, travel and photography.
+            <br></br>
+            My latest resume and contact info are on <a href="https://www.linkedin.com/in/irinakramer/" aria-label="LinkedIn">LinkedIn</a>. Thanks for visiting.
+            
+            </p>  
         </section>
-        <section>
+        {/* <section>
             <span id="projects"></span>
             <h2>Projects &amp; Portfolio</h2>
             <ProjectList projects={data} />
-        </section>
-        <section>
+        </section> */}
+        {/* <section>
             <span id="contact"></span>
             <h2>Contact</h2>
             <p>You can send me an <a href="mailto:irakramer@gmail.com">email</a> or contact me via <a href="https://www.linkedin.com/in/irinakramer/">LinkedIn</a>. Thanks for visiting!</p>
             <br /><br />
-        </section>
+        </section> */}
     </Layout>
 )
