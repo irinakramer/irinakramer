@@ -1,5 +1,11 @@
 ---
+import { Icon } from "astro-icon";
 const { platform, username } = Astro.props;
 ---
 
-<a href={`https://www.${platform}.com/${username}`}>{platform}</a>
+<a
+    class="flex my-3"
+    href={`https://www.${platform}.com/${username}`}
+    target="_blank"
+    ><Icon class="w-5 mr-2" name={`mdi:${platform}`} />{platform}</a
+>
