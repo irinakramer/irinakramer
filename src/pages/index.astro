@@ -2,11 +2,13 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Social from "../components/Social.astro";
+
+const linkedInSlug = `linkedin\in`;
 ---
 
 <Layout title="Welcome to Astro.">
     <main>
-        <section class="mb-8 leading-normal">
+        <section class="mb-10 leading-normal">
             <h2 class="text-base font-semibold mb-4">About</h2>
             <p class="mb-4">
                 Hello! I'm a skilled Frontend Engineer from Petaluma,
@@ -28,7 +30,7 @@ import Social from "../components/Social.astro";
                 projects.
             </p>
         </section>
-        <section class="mb-8">
+        <section class="mb-10">
             <h2 class="text-base font-semibold mb-6">Projects</h2>
             <ul role="list" class="link-card-grid">
                 <Card
@@ -53,9 +55,15 @@ import Social from "../components/Social.astro";
                 />
             </ul>
         </section>
-        <section class="mb-8">
+        <section class="mb-10">
             <h2 class="text-base font-semibold mb-4">Connect</h2>
             <ul>
+                <li>
+                    <Social
+                        platform="linkedin"
+                        username="in/irinakramer"
+                    />
+                </li>
                 <li>
                     <Social
                         platform="github"
