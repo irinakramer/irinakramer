@@ -1,6 +1,3 @@
+## 🚀 Hi! 👋 I'm Irina
 
-### 🚀 My Website
-
-This repo is a personal website. 
-It is build with Gatsby and hosted on Netlify. 
-[irinakramer.com](https://www.irinakramer.com/)
+I'm a Frontend Engineer who loves to learn and create.
