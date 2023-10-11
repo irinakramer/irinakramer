@@ -1,0 +1,27 @@
+---
+import { Image } from "astro:assets";
+import Bouquet from "../images/projects/Bouquet.png";
+---
+
+<li>
+    <a href=""
+        ><div
+            class="flex space-x-4 p-2 sm:p-4 rounded-lg bg-slate-800 hover:bg-slate-700"
+        >
+            <div>
+                <Image
+                    class="w-20 sm:w-28 rounded-sm"
+                    src={Bouquet}
+                    alt="Bouquet - wine tasting app"
+                />
+            </div>
+            <div>
+                <p class="text-base font-semibold mb-1">Bouquet</p>
+                <p class="text-slate-400 text-xs leading-4 mb-1">
+                    React, Material UI, GeoCharts API, Back4App
+                </p>
+                <p class="text-xs">2021 - 2023</p>
+            </div>
+        </div></a
+    >
+</li>
