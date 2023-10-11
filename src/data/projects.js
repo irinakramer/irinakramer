@@ -22,7 +22,7 @@ const projects = [
         company: "SmartBiz",
     },
     {
-        name: "Bouquet - Wine Tasting App",
+        name: "Bouquet",
         url: "https://bouquet-wine-tasting.herokuapp.com/",
         description:
             "This app is a guide to help you identify aromas and scents present in most wine families. Full CRUD app.",
