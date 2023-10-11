@@ -1,12 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 import Social from "../components/Social.astro";
-
-const linkedInSlug = `linkedin\in`;
+import ProjectCard from "../components/ProjectCard.astro";
+import projects from "../data/projects.js";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Irina Kramer - Frontend Engineer">
     <main>
         <section class="mb-10 leading-normal">
             <h2 class="text-base font-semibold mb-4">About</h2>
@@ -14,9 +13,7 @@ const linkedInSlug = `linkedin\in`;
                 Hello! I'm a skilled Frontend Engineer from Petaluma,
                 California, with 15+ years in the web industry. I
                 specialize in crafting seamless user experiences for
-                enterprise and eCommerce websites. Recently while
-                working in fintech, I built a frontend for innovative
-                bank statement analysis web app.
+                enterprise websites and applications.
             </p>
             <p class="mb-4">
                 I excel at turning design visions into functional
@@ -25,34 +22,26 @@ const linkedInSlug = `linkedin\in`;
                 Next.js.
             </p>
             <p class="mb-4">
-                Currently, I'm open to part-time or contract frontend
+                Currently, I'm open to contract frontend
                 opportunities, ready to bring my expertise to your
                 projects.
             </p>
         </section>
         <section class="mb-10">
-            <h2 class="text-base font-semibold mb-6">Projects</h2>
+            <h2 class="text-base font-semibold mb-6">Portfolio</h2>
             <ul role="list" class="link-card-grid">
-                <Card
-                    href="https://github.com/irinakramer"
-                    title="Bank Statement Analyzer"
-                    body="Full stack app to analyze bank transactions and calculate ratios for loan eligibility"
-                />
-                <Card
-                    href="https://bouquet-wine-tasting.herokuapp.com/"
-                    title="Bouquet Wine Tasting"
-                    body="Guide to help identify aromas and scents present in most wine families."
-                />
-                <Card
-                    href="http://joby.com/us-en/"
-                    title="JOBY.com eCommerce site"
-                    body="Responsive templates for product, category, shopping cart pages, tech specs feed, and marketing landing pages."
-                />
-                <Card
-                    href='https://www.lowepro.com/us-en/loweprofessionals/"'
-                    title="Brand Ambassadors"
-                    body="Landing pages built from PSD mockups to functional templates consisting of components."
-                />
+                {
+                    projects.map((project) => (
+                        <ProjectCard
+                            name={project.name}
+                            url={project.url}
+                            image={project.image.src}
+                            tech={project.tech}
+                            year={project.year}
+                            company={project.company}
+                        />
+                    ))
+                }
             </ul>
         </section>
         <section class="mb-10">
@@ -86,12 +75,3 @@ const linkedInSlug = `linkedin\in`;
         </section>
     </main>
 </Layout>
-
-<style>
-    .link-card-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-        gap: 2rem;
-        padding: 0;
-    }
-</style>
