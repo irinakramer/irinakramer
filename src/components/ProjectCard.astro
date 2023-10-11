@@ -1,26 +1,29 @@
 ---
-import { Image } from "astro:assets";
-import Bouquet from "../images/projects/Bouquet.png";
+const { name, url, description, tech, image, year, company } =
+    Astro.props;
 ---
 
-<li>
-    <a href=""
+<li class="my-8">
+    <a href={url}
         ><div
-            class="flex space-x-4 p-2 sm:p-4 rounded-lg bg-slate-800 hover:bg-slate-700"
+            class="flex space-x-4 p-2 sm:p-3 rounded-lg bg-slate-800 hover:bg-slate-700"
         >
             <div>
-                <Image
+                <img
                     class="w-20 sm:w-28 rounded-sm"
-                    src={Bouquet}
-                    alt="Bouquet - wine tasting app"
+                    src={image}
+                    alt="alt"
                 />
             </div>
-            <div>
-                <p class="text-base font-semibold mb-1">Bouquet</p>
+            <div class="flex-1">
+                <p class="text-sm font-semibold mb-1">{name}</p>
                 <p class="text-slate-400 text-xs leading-4 mb-1">
-                    React, Material UI, GeoCharts API, Back4App
+                    {tech}
                 </p>
-                <p class="text-xs">2021 - 2023</p>
+                <div class="flex justify-between">
+                    <p class="text-xs">{year}</p>
+                    <p class="text-xs">{company}</p>
+                </div>
             </div>
         </div></a
     >
