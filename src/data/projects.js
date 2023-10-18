@@ -17,7 +17,7 @@ const projects = [
         url: "../projects/bsa",
         description:
             "Full stack app to analyze bank transactions and calculate ratios for loan eligibility",
-        tech: "React, Chakra, Rest/GraphQL APIs, Flask",
+        tech: "React, Chakra UI, Rest/GraphQL APIs, Flask",
         image: BSA,
         year: "2021 - 2023",
         company: "SmartBiz",
