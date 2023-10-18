@@ -1,0 +1,50 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../../layouts/Layout.astro";
+import BSA_Anaysis_terms from "../../images/projects/BSA_Analysis_terms.png";
+import BSA_Transactions from "../../images/projects/BSA_Transactions.png";
+import BSA_Debt_Schedule from "../../images/projects/BSA_Debt_Schedule.png";
+---
+
+<Layout title="Irina Kramer - Frontend Engineer - BSA project">
+    <div>
+        <h2 class="text-base font-semibold mb-4">
+            Bank Statement Analysis tool
+        </h2>
+        <p class="mb-6">
+            <span class="font-semibold">Summary:</span> The BSA tool
+            is an internal resource designed to aid Relationship
+            Managers (RMs) in swiftly reviewing customer bank
+            statements, facilitating streamlined underwriting
+            decisions. This tool enhances the business's ability to
+            process a higher volume of loan applications quickly and
+            efficiently.
+        </p>
+        <section class="mb-8">
+            <h3 class="mb-2">Analysis page</h3>
+            <Image
+                class="rounded-md"
+                src={BSA_Anaysis_terms}
+                alt="BSA Analysis page"
+            />
+        </section>
+
+        <section class="mb-8">
+            <h3 class="mb-2">Transactions page</h3>
+            <Image
+                class="rounded-md"
+                src={BSA_Transactions}
+                alt="BSA Transactions page"
+            />
+        </section>
+
+        <section class="mb-8">
+            <h3 class="mb-2">Debt Schedule page</h3>
+            <Image
+                class="rounded-md"
+                src={BSA_Debt_Schedule}
+                alt="BSA Debt Schedule page"
+            />
+        </section>
+    </div>
+</Layout>

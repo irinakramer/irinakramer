@@ -9,15 +9,16 @@ import projShoppingAssistant from "../images/projects/ShoppingAssistant.png";
 import projMathSkills from "../images/projects/MathSkills.png";
 import projBouquet from "../images/projects/Bouquet.png";
 import ComingSoon from "../images/projects/ComingSoon.svg";
+import BSA from "../images/projects/BSA.png";
 
 const projects = [
     {
         name: "Bank Statement Analyzer",
-        url: "",
+        url: "../projects/bsa",
         description:
             "Full stack app to analyze bank transactions and calculate ratios for loan eligibility",
-        tech: "React, Chakra, Rest/GraphQL APIs, Flask",
-        image: ComingSoon,
+        tech: "React, Chakra UI, Rest/GraphQL APIs, Flask",
+        image: BSA,
         year: "2021 - 2023",
         company: "SmartBiz",
     },
@@ -29,7 +30,7 @@ const projects = [
         tech: "React, Material UI, GeoCharts API, Back4App",
         image: projBouquet,
         year: "2021 - 2023",
-        company: "",
+        company: "Personal",
     },
     {
         name: "JOBY.com eCommerce site",
@@ -78,7 +79,7 @@ const projects = [
                 url: "https://www.gitzo.com/us-en/ambassadors/",
             },
         ],
-        company: "Daymen",
+        company: "Vitec",
     },
     {
         name: "Lowepro Quickfinder",
