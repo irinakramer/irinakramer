@@ -1,0 +1,62 @@
+---
+import { Image } from "astro:assets";
+import BSA_Anaysis_terms from "../../images/projects/BSA_Analysis_terms.png";
+import BSA_Transactions from "../../images/projects/BSA_Transactions.png";
+import BSA_Debt_Schedule from "../../images/projects/BSA_Debt_Schedule.png";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Astro description" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <title>BSA</title>
+    </head>
+    <body class="bg-slate-900 text-slate-300 h-screen w-screen">
+        <div
+            class="max-w-4xl mx-auto px-6 py-12 sm:p-12 md:p-16 flex flex-col justify-between"
+        >
+            <h2 class="text-base font-semibold mb-4">
+                Bank Statement Analysis tool
+            </h2>
+            <p class="mb-6">
+                <span class="font-semibold">Summary:</span> The BSA
+                tool is an internal resource designed to aid
+                Relationship Managers (RMs) in swiftly reviewing
+                customer bank statements, facilitating streamlined
+                underwriting decisions. This tool enhances the
+                business's ability to process a higher volume of loan
+                applications quickly and efficiently.
+            </p>
+            <section class="mb-8">
+                <h3 class="mb-2">Analysis page</h3>
+                <Image
+                    class="rounded-md"
+                    src={BSA_Anaysis_terms}
+                    alt="BSA Analysis page"
+                />
+            </section>
+
+            <section class="mb-8">
+                <h3 class="mb-2">Transactions page</h3>
+                <Image
+                    class="rounded-md"
+                    src={BSA_Transactions}
+                    alt="BSA Transactions page"
+                />
+            </section>
+
+            <section class="mb-8">
+                <h3 class="mb-2">Debt Schedule page</h3>
+                <Image
+                    class="rounded-md"
+                    src={BSA_Debt_Schedule}
+                    alt="BSA Debt Schedule page"
+                />
+            </section>
+        </div>
+    </body>
+</html>

@@ -13,7 +13,7 @@ import ComingSoon from "../images/projects/ComingSoon.svg";
 const projects = [
     {
         name: "Bank Statement Analyzer",
-        url: "",
+        url: "../projects/bsa",
         description:
             "Full stack app to analyze bank transactions and calculate ratios for loan eligibility",
         tech: "React, Chakra, Rest/GraphQL APIs, Flask",
