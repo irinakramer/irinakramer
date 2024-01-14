@@ -1,35 +1,24 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
-import Social from "../components/Social.astro";
 import ProjectCard from "../components/ProjectCard.astro";
 import projects from "../data/projects.js";
 ---
 
 <Layout title="Irina Kramer - Frontend Engineer">
-    <main class="max-w-md flex-1 text-base">
+    <main class="max-w-lg flex-1 text-base mx-auto">
         <Header />
-        <section class="mb-10 leading-normal">
-            <h2 class="font-semibold mb-4">About</h2>
-            <p class="mb-4">
-                Hello! I'm a skilled Frontend Engineer from Petaluma,
-                California, with 15+ years in the web industry. I love
-                creating seamless user experiences for enterprise
-                websites and applications.
-            </p>
-            <p class="mb-4">
-                On the tech side I use JavaScript, React, REST/GraphQL
-                APIs, MySQL, HTML, and CSS/SCSS. I'm also diving into
-                Remix and Next.js all-stack frameworks.
-            </p>
-            <p class="mb-4">
-                Currently, I'm open to contract frontend
-                opportunities, ready to bring my expertise to your
-                projects.
+        <section class="mb-4 sm:mb-10 leading-normal">
+            <p class="mb-2 sm:mb-4">
+                Hi! I'm a skilled software developer from Petaluma,
+                California, with 15+ years in the web industry.
+                Currently, I'm open to contract and freelance
+                frontend/full-stack opportunities, ready to bring my
+                expertise to your projects.
             </p>
         </section>
         <section class="mb-10">
-            <h2 class="font-semibold mb-6">Portfolio</h2>
+            <h2 class="font-semibold mb-0 sm:mb-6">Portfolio</h2>
             <ul role="list" class="link-card-grid">
                 {
                     projects.map((project) => (
@@ -43,35 +32,6 @@ import projects from "../data/projects.js";
                         />
                     ))
                 }
-            </ul>
-        </section>
-        <section class="mb-10">
-            <h2 class="font-semibold mb-4">Connect</h2>
-            <ul>
-                <li>
-                    <Social
-                        platform="linkedin"
-                        username="in/irinakramer"
-                    />
-                </li>
-                <li>
-                    <Social
-                        platform="github"
-                        username="irinakramer"
-                    />
-                </li>
-                <li>
-                    <Social
-                        platform="twitter"
-                        username="irinakramer"
-                    />
-                </li>
-                <li>
-                    <Social
-                        platform="instagram"
-                        username="irinakramer_"
-                    />
-                </li>
             </ul>
         </section>
     </main>

@@ -7,5 +7,8 @@ const { platform, username } = Astro.props;
     class="flex my-3"
     href={`https://www.${platform}.com/${username}`}
     target="_blank"
-    ><Icon class="w-5 mr-2" name={`mdi:${platform}`} />{platform}</a
+    ><Icon
+        class="w-5 mr-2 text-slate-400 hover:text-slate-300"
+        name={`mdi:${platform}`}
+    /></a
 >
