@@ -55,4 +55,4 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 
 ## Usage:
 
-Tailwind, Bacground (https://bg.ibelick.com/), astro-icon (https://www.astroicon.dev, mdi package)
+Tailwind, Background (https://bg.ibelick.com/), astro-icon (https://www.astroicon.dev, https://icon-sets.iconify.design/ mdi package)
