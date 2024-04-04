@@ -1,0 +1,37 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import projects from "../data/projects.js";
+---
+
+<Layout title="Irina Kramer - Frontend Engineer">
+    <main class="max-w-lg flex-1 text-base mx-auto">
+        <Header />
+        <section class="mb-4 sm:mb-10 leading-normal">
+            <p class="mb-2 sm:mb-4">
+                Hi! I'm a skilled software developer from Petaluma,
+                California, with 15+ years in the web industry.
+                Currently, I'm open to contract and freelance
+                frontend/full-stack opportunities.
+            </p>
+        </section>
+        <section class="mb-10">
+            <h2 class="font-semibold mb-0 sm:mb-6">Portfolio</h2>
+            <ul role="list" class="link-card-grid">
+                {
+                    projects.map((project) => (
+                        <ProjectCard
+                            name={project.name}
+                            url={project.url}
+                            image={project.image.src}
+                            tech={project.tech}
+                            year={project.year}
+                            company={project.company}
+                        />
+                    ))
+                }
+            </ul>
+        </section>
+    </main>
+</Layout>
