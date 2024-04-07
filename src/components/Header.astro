@@ -1,37 +1,78 @@
 ---
 import Social from "./Social.astro";
+import Spiral from "./icons/Spiral.astro";
 import { Image } from "astro:assets";
 import profilePhoto from "../images/profilePhoto.jpg";
 ---
 
 <header>
-    <div
-        class="max-w-lg flex flex-row justify-between text-lg mb-4 sm:mb-10"
-    >
-        <div class="flex flex-row">
-            <div class="mr-4 w-12 sm:w-16">
-                <Image
-                    class="rounded-md"
-                    src={profilePhoto}
-                    alt="Irina Kramer profile photo"
-                />
+    <div class="justify-center w-full mx-auto bg-gray-100">
+        <div
+            x-data="{ open: false }"
+            class="flex flex-col w-full px-8 py-2 mx-auto md:px-12 md:items-center md:justify-between md:flex-row lg:px-32 max-w-7xl"
+        >
+            <div
+                class="flex flex-row items-center justify-between text-black"
+            >
+                <a
+                    class="inline-flex items-center gap-3 text-xl font-bold tracking-tight text-black"
+                    href="/"
+                >
+                    <span><Spiral /></span>
+                    <span>Irina Kramer</span>
+                </a>
+                <button
+                    class="rounded-lg md:hidden focus:outline-none focus:shadow-outline"
+                    @click="open = !open"
+                >
+                    <svg
+                        class="w-6 h-6"
+                        stroke="currentColor"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            :class="{'hidden': open, 'inline-flex': !open }"
+                            class="inline-flex"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                        <path
+                            :class="{'hidden': !open, 'inline-flex': open }"
+                            class="hidden"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
             </div>
-
-            <div>
-                <h1 class="font-semibold leading-tight">
-                    Irina Kramer
-                </h1>
-                <p class="text-slate-400 font-normal">
-                    Frontend Developer
-                </p>
-            </div>
-        </div>
-
-        <div class="flex">
-            <Social platform="linkedin" username="in/irinakramer" />
-            <Social platform="github" username="irinakramer" />
-            <Social platform="twitter" username="irinakramer" />
-            <Social platform="instagram" username="irinakramer_" />
+            <nav
+                :class="{'flex': open, 'hidden': !open}"
+                class="flex-col items-center flex-grow hidden gap-3 p-4 px-5 text-sm font-medium text-gray-500 md:px-0 md:pb-0 md:flex md:justify-start md:flex-row lg:p-0 md:mt-0"
+            >
+                <a
+                    class="hover:text-black focus:outline-none focus:text-gray-500 md:ml-auto"
+                    href="#_"
+                    >Features
+                </a>
+                <a
+                    class="hover:text-black focus:outline-none focus:text-gray-500"
+                    href="#_"
+                    >About
+                </a>
+                <div class="flex flex-row">
+                    <Social
+                        platform="linkedin"
+                        username="in/irinakramer"
+                    />
+                    <Social
+                        platform="github"
+                        username="irinakramer"
+                    />
+                </div>
+            </nav>
         </div>
     </div>
 </header>

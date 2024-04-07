@@ -1,95 +1,38 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header.astro";
 import ProjectCard from "../components/ProjectCard.astro";
 import projects from "../data/projects.js";
-import Spiral from "../components/icons/Spiral.astro";
-import Social from "../components/Social.astro";
+import { Image } from "astro:assets";
+import profilePhoto from "../images/profilePhoto.jpg";
+import bsa from "../images/projects/bsa.jpg";
+import joby from "../images/projects/joby.jpg";
 ---
 
 <Layout title="Irina Kramer - Frontend Engineer">
     <section>
-        <!-- navigation -->
-        <div class="justify-center w-full mx-auto bg-gray-100">
-            <div
-                x-data="{ open: false }"
-                class="flex flex-col w-full px-8 py-2 mx-auto md:px-12 md:items-center md:justify-between md:flex-row lg:px-32 max-w-7xl"
-            >
-                <div
-                    class="flex flex-row items-center justify-between text-black"
-                >
-                    <a
-                        class="inline-flex items-center gap-3 text-xl font-bold tracking-tight text-black"
-                        href="/"
-                    >
-                        <span><Spiral /></span>
-                        <span>Irina Kramer</span>
-                    </a>
-                    <button
-                        class="rounded-lg md:hidden focus:outline-none focus:shadow-outline"
-                        @click="open = !open"
-                    >
-                        <svg
-                            class="w-6 h-6"
-                            stroke="currentColor"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                        >
-                            <path
-                                :class="{'hidden': open, 'inline-flex': !open }"
-                                class="inline-flex"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16"></path>
-                            <path
-                                :class="{'hidden': !open, 'inline-flex': open }"
-                                class="hidden"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M6 18L18 6M6 6l12 12"></path>
-                        </svg>
-                    </button>
-                </div>
-                <nav
-                    :class="{'flex': open, 'hidden': !open}"
-                    class="flex-col items-center flex-grow hidden gap-3 p-4 px-5 text-sm font-medium text-gray-500 md:px-0 md:pb-0 md:flex md:justify-start md:flex-row lg:p-0 md:mt-0"
-                >
-                    <a
-                        class="hover:text-black focus:outline-none focus:text-gray-500 md:ml-auto"
-                        href="#_"
-                        >Features
-                    </a>
-                    <a
-                        class="hover:text-black focus:outline-none focus:text-gray-500 md:mr-auto"
-                        href="#_"
-                        >About
-                    </a>
-                    <a
-                        class="inline-flex items-center justify-center w-full h-8 gap-3 px-5 py-3 text-xs font-medium text-white duration-200 bg-gray-900 rounded-lg md:w-auto hover:bg-gray-700 focus:ring-2 focus:ring-offset-2 focus:ring-black"
-                        href="#_"
-                        role="button"
-                    >
-                        Button
-                    </a>
-                </nav>
-            </div>
-        </div>
-
-        <!-- portfolio -->
+        <!-- intro -->
         <div
-            class="px-8 py-24 mx-auto text-center md:px-12 lg:px-24 lg:pt-64 text-gray-500"
+            class="px-8 py-10 mx-auto text-center md:px-12 lg:px-24 text-gray-500"
         >
+            <div class="mx-auto w-32 pb-2 sm:pb-6 sm:w-48">
+                <Image
+                    class="rounded-full"
+                    src={profilePhoto}
+                    alt="Irina Kramer profile photo"
+                />
+            </div>
             <p
                 class="max-w-xl mx-auto font-serif text-xl text-gray-500"
             >
                 <em>
-                    Irina Kramer is an non award-winning full-stuck
-                    wannanbe developer, based in Ontrio, Canada. Lead
-                    developer at Wind Basic, his work is focused on
-                    creating bespoke, engaging &amp; effective digital
-                    experiences.
+                    Hello! I'm Irina Kramer, full stack developer with
+                    a front-end focus. I specialize in developing
+                    ecommerce websites that are beautiful, fast and
+                    converting. I'm well versed in Magento / Adobe
+                    Commerce, HTML/JavaScript/CSS, React, and more. I
+                    enjoy helping brands stand out by finding creative
+                    solutions and providing exceptional work. I'm
+                    based in Petaluma, California.
                 </em>
             </p>
             <div
@@ -99,26 +42,32 @@ import Social from "../components/Social.astro";
                     href="#_"
                     class="overflow-hidden rounded-md bg-gray-100"
                     ><div class="p-4 lg:px-12 lg:py-24">
-                        <img
+                        <Image
                             class="duration-500 rounded-lg shadow hover:shadow-3xl hover:-translate-y-4"
-                            src="./images/myfolio/1.png"
-                            alt="#"
+                            src={bsa}
+                            alt="bsa"
                         />
-                        <p class="mt-8 text-sm text-gray-500">
-                            Lexington Themes
+                        <!-- <p class="mt-8 text-sm text-gray-500">
+                            Bank Statement Analyzer App
+                        </p> -->
+                        <h3 class="mt-8 text-base text-gray-900">
+                            Bank Statement Analyzer App
+                        </h3>
+                        <p class="mt-2 text-sm text-gray-500">
+                            React, Chakra UI, Rest/GraphQL APIs, Flask
                         </p>
                     </div></a
                 ><a
                     href="#_"
                     class="overflow-hidden rounded-md bg-gray-100"
                     ><div class="p-4 lg:px-12 lg:py-24">
-                        <img
+                        <Image
                             class="duration-500 rounded-lg shadow hover:shadow-3xl hover:-translate-y-4"
-                            src="./images/myfolio/2.png"
-                            alt="#"
+                            src={joby}
+                            alt="joby"
                         />
                         <p class="mt-8 text-sm text-gray-500">
-                            Creative Solutions
+                            Joby.com ecommerce site
                         </p>
                     </div></a
                 ><a
@@ -673,43 +622,5 @@ import Social from "../components/Social.astro";
                 </li>
             </ul>
         </div>
-    </section>
-
-    <section>
-        <footer>
-            <div
-                class="px-8 py-12 mx-auto md:px-12 lg:px-32 max-w-7xl"
-            >
-                <div class="flex flex-col items-baseline space-y-6">
-                    <div class="mx-auto">
-                        <a
-                            href="/"
-                            class="mx-auto text-lg text-center"
-                        >
-                            ❖
-                        </a>
-                    </div>
-                    <div
-                        class="mx-auto"
-                        x-data="{ year: new Date().getFullYear() }"
-                    >
-                        <span
-                            class="mx-auto mt-2 text-sm font-medium text-gray-500"
-                        >
-                            Copyright © <span x-text="year"
-                                >2024</span
-                            >
-                            <a
-                                aria-label="irina kramer"
-                                href="#_"
-                                class="mx-2 text-blue-500 hover:text-gray-500"
-                                >irina kramer</a
-                            >
-                            Since 1985
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </footer>
     </section>
 </Layout>
