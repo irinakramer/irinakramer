@@ -1,39 +1,19 @@
 ---
-import { Icon } from "astro-icon";
-const { name, url, description, tech, image, year, company } =
-    Astro.props;
+const { name, url, tech, image } = Astro.props;
 ---
 
-<li class="my-8">
-    <a href={url}
-        ><div
-            class="flex space-x-4 p-2 sm:p-3 rounded-lg transition-colors hover:bg-fuchsia-950/50 bg-fuchsia-950/20"
-        >
-            <div>
-                <img
-                    class="w-20 sm:w-28 rounded-sm"
-                    src={image}
-                    alt="alt"
-                />
-            </div>
-
-            <div class="flex-1 flex flex-row justify-between">
-                <div>
-                    <p class="text-sm font-semibold mb-1">
-                        {name}
-                    </p>
-                    <p class="text-slate-400 text-xs leading-4 mb-1">
-                        {tech}
-                    </p>
-                    <p class="text-xs">{year}, {company}</p>
-                </div>
-                <div>
-                    <Icon
-                        class="w-5 text-slate-500"
-                        name={`mdi:arrow-top-right`}
-                    />
-                </div>
-            </div>
-        </div></a
-    >
-</li>
+<a href={url} class="overflow-hidden rounded-md bg-gray-100"
+    ><div class="p-4 lg:px-12 lg:py-24">
+        <img
+            class="duration-500 rounded-lg shadow hover:shadow-3xl hover:-translate-y-4"
+            src={image}
+            alt={name}
+        />
+        <h3 class="mt-8 text-base text-gray-900">
+            {name}
+        </h3>
+        <p class="mt-2 text-sm text-gray-500">
+            {tech}
+        </p>
+    </div></a
+>

@@ -38,130 +38,16 @@ import joby from "../images/projects/joby.jpg";
             <div
                 class="grid grid-cols-1 gap-4 mx-auto mt-24 lg:gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl"
             >
-                <a
-                    href="#_"
-                    class="overflow-hidden rounded-md bg-gray-100"
-                    ><div class="p-4 lg:px-12 lg:py-24">
-                        <Image
-                            class="duration-500 rounded-lg shadow hover:shadow-3xl hover:-translate-y-4"
-                            src={bsa}
-                            alt="bsa"
+                {
+                    projects.map((project) => (
+                        <ProjectCard
+                            name={project.name}
+                            url={project.url}
+                            image={project.image.src}
+                            tech={project.tech}
                         />
-                        <!-- <p class="mt-8 text-sm text-gray-500">
-                            Bank Statement Analyzer App
-                        </p> -->
-                        <h3 class="mt-8 text-base text-gray-900">
-                            Bank Statement Analyzer App
-                        </h3>
-                        <p class="mt-2 text-sm text-gray-500">
-                            React, Chakra UI, Rest/GraphQL APIs, Flask
-                        </p>
-                    </div></a
-                ><a
-                    href="#_"
-                    class="overflow-hidden rounded-md bg-gray-100"
-                    ><div class="p-4 lg:px-12 lg:py-24">
-                        <Image
-                            class="duration-500 rounded-lg shadow hover:shadow-3xl hover:-translate-y-4"
-                            src={joby}
-                            alt="joby"
-                        />
-                        <p class="mt-8 text-sm text-gray-500">
-                            Joby.com ecommerce site
-                        </p>
-                    </div></a
-                ><a
-                    href="#_"
-                    class="overflow-hidden rounded-md bg-gray-100"
-                    ><div class="p-4 lg:px-12 lg:py-24">
-                        <img
-                            class="duration-500 rounded-lg shadow hover:shadow-3xl hover:-translate-y-4"
-                            src="./images/myfolio/3.png"
-                            alt="#"
-                        />
-                        <p class="mt-8 text-sm text-gray-500">
-                            Digital Innovations
-                        </p>
-                    </div></a
-                ><a
-                    href="#_"
-                    class="overflow-hidden rounded-md bg-gray-100"
-                    ><div class="p-4 lg:px-12 lg:py-24">
-                        <img
-                            class="duration-500 rounded-lg shadow hover:shadow-3xl hover:-translate-y-4"
-                            src="./images/myfolio/4.png"
-                            alt="#"
-                        />
-                        <p class="mt-8 text-sm text-gray-500">
-                            WebCrafters
-                        </p>
-                    </div></a
-                ><a
-                    href="#_"
-                    class="overflow-hidden rounded-md bg-gray-100"
-                    ><div class="p-4 lg:px-12 lg:py-24">
-                        <img
-                            class="duration-500 rounded-lg shadow hover:shadow-3xl hover:-translate-y-4"
-                            src="./images/myfolio/5.png"
-                            alt="#"
-                        />
-                        <p class="mt-8 text-sm text-gray-500">
-                            PixelPerfect Designs
-                        </p>
-                    </div></a
-                ><a
-                    href="#_"
-                    class="overflow-hidden rounded-md bg-gray-100"
-                    ><div class="p-4 lg:px-12 lg:py-24">
-                        <img
-                            class="duration-500 rounded-lg shadow hover:shadow-3xl hover:-translate-y-4"
-                            src="./images/myfolio/6.png"
-                            alt="#"
-                        />
-                        <p class="mt-8 text-sm text-gray-500">
-                            CodeMasters
-                        </p>
-                    </div></a
-                ><a
-                    href="#_"
-                    class="overflow-hidden rounded-md bg-gray-100"
-                    ><div class="p-4 lg:px-12 lg:py-24">
-                        <img
-                            class="duration-500 rounded-lg shadow hover:shadow-3xl hover:-translate-y-4"
-                            src="./images/myfolio/7.png"
-                            alt="#"
-                        />
-                        <p class="mt-8 text-sm text-gray-500">
-                            Web Wizards
-                        </p>
-                    </div></a
-                ><a
-                    href="#_"
-                    class="overflow-hidden rounded-md bg-gray-100"
-                    ><div class="p-4 lg:px-12 lg:py-24">
-                        <img
-                            class="duration-500 rounded-lg shadow hover:shadow-3xl hover:-translate-y-4"
-                            src="./images/myfolio/8.png"
-                            alt="#"
-                        />
-                        <p class="mt-8 text-sm text-gray-500">
-                            TechCreators
-                        </p>
-                    </div></a
-                ><a
-                    href="#_"
-                    class="overflow-hidden rounded-md bg-gray-100"
-                    ><div class="p-4 lg:px-12 lg:py-24">
-                        <img
-                            class="duration-500 rounded-lg shadow hover:shadow-3xl hover:-translate-y-4"
-                            src="./images/myfolio/9.png"
-                            alt="#"
-                        />
-                        <p class="mt-8 text-sm text-gray-500">
-                            WebArtistry
-                        </p>
-                    </div></a
-                >
+                    ))
+                }
             </div>
         </div>
     </section>
