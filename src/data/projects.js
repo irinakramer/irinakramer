@@ -1,7 +1,7 @@
 import bsa from "../images/projects/bsa.jpg";
 import projQuickfinder from "../images/projects/quickfinder.jpg";
 import projJoby from "../images/projects/joby.jpg";
-import projJobyMenu from "../images/projects/JOBYmenu.png";
+import projMegaMenu from "../images/projects/megamenu.jpg";
 import projLowepro from "../images/projects/lowepro.jpg";
 import projLoweproBlog from "../images/projects/loweproblog.jpg";
 import projJobyBlog from "../images/projects/jobyblog.jpg";
@@ -122,26 +122,15 @@ const projects = [
     //     image: projShoppingAssistant,
     //     year: "2018",
     // },
-    // {
-    //     name: "Responsive Mega Menu",
-    //     url: "https://irinakramer.github.io/mega-menu/",
-    //     description:
-    //         "Lightweight CSS menu for JOBY.com with CSS gradients, transitions, SVG icons, focus on performance and scalability.",
-    //     tech: "CSS, HTML, SVG animation",
-    //     image: projJobyMenu,
-    //     year: "2017",
-    //     extra_text: "Versions: ",
-    //     extra_links: [
-    //         {
-    //             name: "Desktop",
-    //             url: "https://irinakramer.github.io/mega-menu/",
-    //         },
-    //         {
-    //             name: "Mobile",
-    //             url: "https://irinakramer.github.io/mega-menu/mobile.html",
-    //         },
-    //     ],
-    // },
+    {
+        name: "Responsive Mega Menu",
+        url: "https://irinakramer.github.io/mega-menu/",
+        description:
+            "Lightweight CSS menu for JOBY.com with CSS gradients, transitions, SVG icons, focus on performance and scalability.",
+        tech: "CSS, HTML, SVG animation",
+        image: projMegaMenu,
+        year: "2017",
+    },
     // {
     //     name: "Responsive Grid with Flexbox",
     //     url: "https://codepen.io/irinakramer/pen/jcLlp",
