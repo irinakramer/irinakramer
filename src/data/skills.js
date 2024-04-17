@@ -1,11 +1,11 @@
-import javascript from "../icons/javascript.svg?raw";
-import html from "../icons/html.svg?raw";
-import astro from "../icons/astro.svg?raw";
-import css3 from "../icons/css3.svg?raw";
-import magento from "../icons/magento.svg?raw";
-import react from "../icons/react.svg?raw";
-import tailwind from "../icons/tailwind-css.svg?raw";
-import wordpress from "../icons/wordpress.svg?raw";
+import javascript from "../icons/logos/javascript.svg?raw";
+import html from "../icons/logos/html.svg?raw";
+import astro from "../icons/logos/astro.svg?raw";
+import css3 from "../icons/logos/css3.svg?raw";
+import magento from "../icons/logos/magento.svg?raw";
+import react from "../icons/logos/react.svg?raw";
+import tailwind from "../icons/logos/tailwind-css.svg?raw";
+import wordpress from "../icons/logos/wordpress.svg?raw";
 
 const skills = [
     {
