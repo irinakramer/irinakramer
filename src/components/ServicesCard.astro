@@ -6,10 +6,7 @@ const { name, description, icon } = Astro.props;
     <div>
         <span
             class="flex items-center justify-center mx-auto bg-gray-100 rounded-full size-14"
-            ><img
-                src=`./icons/services/${icon}.png`
-                class="size-8"
-            /></span
+            ><img src={icon.src} class="size-8" /></span
         >
     </div>
     <div class="mt-6">

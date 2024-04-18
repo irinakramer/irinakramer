@@ -1,39 +1,45 @@
+import frontend from "../icons/services/web_development.png";
+import ecommerce from "../icons/services/ecommerce.png";
+import cms from "../icons/services/web_page.png";
+import webpage from "../icons/services/web_diagram.png";
+import app from "../icons/services/app_development.png";
+import support from "../icons/services/web_link.png";
+
 const services = [
     {
         name: "Custom websites",
         description:
-            "Tailored websites built from scratch, using the latest web technologies and best practices.",
-        icon: "frontend_development",
+            "Tailored sites built from scratch with the latest web tech.",
+        icon: frontend,
     },
     {
         name: "E-Commerce",
         description:
-            "Powerful online stores on platforms like Magento, WooCommerce, and more.",
-        icon: "ecommerce",
+            "Powerful online stores in Magento, WooCommerce, etc.",
+        icon: ecommerce,
     },
     {
         name: "Landing pages",
         description:
-            "Custom one pagers to promote your product and collect emails",
-        icon: "",
+            "Custom one-pagers for product promotion and email collection.",
+        icon: webpage,
     },
     {
         name: "Wordpress",
         description:
-            "Crafting websites with ACF, custom post types and core WordPress API, going beyond page builders.",
-        icon: "cms",
+            "Off-the-shelf and custom themes, tailored to your needs.",
+        icon: cms,
     },
     {
         name: "App development",
-        description:
-            "Web apps in React. Custom solutions to automate and enhance your workflow.",
-        icon: "other",
+        description: "Web apps in React for workflow enhancement.",
+        icon: app,
     },
     {
         name: "Support",
         description:
-            "Long-term support and collaboration, project management, consulting, and expert guidance.",
-        icon: "other",
+            "Ongoing technical support, collaboration, and consulting.",
+        icon: support,
     },
 ];
 
