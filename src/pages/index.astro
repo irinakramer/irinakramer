@@ -10,11 +10,12 @@ import testimonials from "../data/testimonials";
 import TestimonialCard from "../components/TestimonialCard.astro";
 import { Image } from "astro:assets";
 import profilePhoto from "../images/profilePhoto.jpg";
+import carmel from "../images/carmel.jpg";
 ---
 
-<Layout title="Irina Kramer - Frontend Engineer">
+<Layout title="Irina Kramer - Freelance web developer">
+    <!-- intro -->
     <section>
-        <!-- intro -->
         <div
             class="px-8 py-10 mx-auto text-center md:px-12 lg:px-24 text-gray-500"
         >
@@ -29,18 +30,32 @@ import profilePhoto from "../images/profilePhoto.jpg";
                 class="max-w-xl mx-auto font-serif text-xl text-gray-500"
             >
                 <em>
-                    Hello! I'm Irina Kramer, full stack developer with
-                    a front-end focus. I specialize in developing
-                    ecommerce websites that are beautiful, fast and
-                    converting. I'm well versed in Magento / Adobe
-                    Commerce, HTML/JavaScript/CSS, React, and more. I
-                    enjoy helping brands stand out by finding creative
+                    Hello! I'm Irina Kramer, a freelance web developer
+                    and designer. I specialize in developing ecommerce
+                    websites that are beautiful, fast and converting.
+                    I'm well versed in the latest web tech and enjoy
+                    helping brands stand out by finding creative
                     solutions and providing exceptional work. I'm
                     based in Petaluma, California.
                 </em>
             </p>
+        </div>
+    </section>
+
+    <!-- portfolio -->
+    <section>
+        <div
+            class="px-8 py-10 mx-auto text-center md:px-12 lg:px-24 text-gray-500"
+        >
+            <div class="text-center">
+                <h2
+                    class="text-4xl font-semibold tracking-tighter text-gray-900 mb-8"
+                >
+                    Portfolio
+                </h2>
+            </div>
             <div
-                class="grid grid-cols-1 gap-4 mx-auto mt-24 lg:gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl"
+                class="grid grid-cols-1 gap-4 mx-auto lg:gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl"
             >
                 {
                     projects.map((project) => (
@@ -67,7 +82,7 @@ import profilePhoto from "../images/profilePhoto.jpg";
                 </h2>
             </div>
             <div
-                class="grid grid-cols-2 text-sm font-medium text-gray-500 gap-x-6 gap-y-12 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-16 text-balance"
+                class="grid grid-cols-2 text-sm font-medium text-center text-gray-500 gap-x-6 gap-y-12 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-16 text-balance"
             >
                 {
                     skills.map((skill) => (
@@ -104,6 +119,88 @@ import profilePhoto from "../images/profilePhoto.jpg";
                         />
                     ))
                 }
+            </div>
+        </div>
+    </section>
+
+    <!-- outsourcing -->
+
+    <section>
+        <div class="px-8 py-24 mx-auto md:px-12 lg:px-32 max-w-7xl">
+            <div
+                class="grid items-center grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-24"
+            >
+                <div class="md:order-first">
+                    <h1
+                        class="text-4xl font-semibold tracking-tighter text-gray-900 text-balance"
+                    >
+                        Outsourcing services
+                        <span class="text-gray-600"
+                            >for digital agencies</span
+                        >
+                    </h1>
+                    <p
+                        class="mt-4 text-base font-medium text-gray-500"
+                    >
+                        I offer freelance web development and
+                        outsourcing services tailored for digital
+                        agencies, providing long-term support and
+                        competitive pricing. Say goodbye to employment
+                        bureaucracy and extra expenses. I'm all about
+                        delivering results, so you have peace of mind
+                        and go on vacation!
+                    </p>
+
+                    <!-- <dl
+                        class="grid grid-cols-2 gap-4 mt-12 list-none lg:gap-6 text-pretty"
+                    >
+                        <div>
+                            <div>❖</div>
+                            <dt
+                                class="mt-4 font-medium text-gray-900"
+                            >
+                                No warranty disclaimer
+                            </dt>
+                            <dd class="mt-2 text-sm text-gray-500">
+                                The license comes with no warranties.
+                                The licensor provides the work "as
+                                is," and users must use it at their
+                                own risk.
+                            </dd>
+                        </div>
+                        <div>
+                            <div>❖</div>
+                            <dt
+                                class="mt-4 font-medium text-gray-900"
+                            >
+                                Commercial use allowed
+                            </dt>
+                            <dd class="mt-2 text-sm text-gray-500">
+                                You are allowed to use the licensed
+                                work for both non-commercial and
+                                commercial purposes.
+                            </dd>
+                        </div>
+                    </dl> -->
+                </div>
+                <div
+                    class="order-first block w-full mt-12 aspect-square lg:mt-0"
+                >
+                    <div
+                        class="h-full p-2 overflow-hidden border shadow-lg bg-gray-50 rounded-3xl"
+                    >
+                        <Image
+                            class="relative w-full rounded-2xl drop-shadow-2xl"
+                            src={carmel}
+                            alt="Carmel photo"
+                        />
+                        <!-- <img
+                            alt="#_"
+                            class="relative w-full rounded-2xl drop-shadow-2xl"
+                            src="/images/appify/phone.png"
+                        /> -->
+                    </div>
+                </div>
             </div>
         </div>
     </section>

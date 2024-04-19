@@ -151,7 +151,7 @@ const projects = [
     },
     {
         name: "JOBY blog",
-        url: "http://blog.joby.co",
+        url: "http://blog.joby.com",
         description:
             "Wordpress theme customizations according to brands style guidelines, new blog post template, old blogs migration to new.",
         tech: "Wordpress, HTML, PHP, CSS",
