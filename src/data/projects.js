@@ -25,7 +25,7 @@ const projects = [
     },
     {
         name: "Bouquet",
-        url: "https://bouquet-wine-tasting.herokuapp.com/",
+        url: "https://bouquet-topaz.vercel.app/",
         description:
             "This app is a guide to help you identify aromas and scents present in most wine families. Full CRUD app.",
         tech: "React, Material UI, GeoCharts API, Back4App",
