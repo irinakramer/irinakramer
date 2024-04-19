@@ -16,29 +16,42 @@ import carmel from "../images/carmel.jpg";
 <Layout title="Irina Kramer - Freelance web developer">
     <!-- intro -->
     <section>
-        <div
-            class="px-8 py-10 mx-auto text-center md:px-12 lg:px-24 text-gray-500"
-        >
-            <div class="mx-auto w-32 pb-2 sm:pb-6 sm:w-48">
-                <Image
-                    class="rounded-full"
-                    src={profilePhoto}
-                    alt="Irina Kramer profile photo"
-                />
-            </div>
-            <p
-                class="max-w-xl mx-auto font-serif text-xl text-gray-500"
+        <div class="relative">
+            <div
+                class="absolute top-0 z-[-2] h-full w-full rotate-180 transform bg-white bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,rgba(252,205,238,.5)_100%)]"
             >
-                <em>
-                    Hello! I'm Irina Kramer, a freelance web developer
-                    and designer. I specialize in developing ecommerce
-                    websites that are beautiful, fast and converting.
-                    I'm well versed in the latest web tech and enjoy
-                    helping brands stand out by finding creative
-                    solutions and providing exceptional work. I'm
-                    based in Petaluma, California.
-                </em>
-            </p>
+            </div>
+
+            <div
+                class="px-8 py-10 mx-auto text-center md:px-12 lg:px-24 text-gray-500 relative"
+            >
+                <div class="mx-auto w-32 pb-2 sm:pb-6 sm:w-48">
+                    <div
+                        class="p-2 overflow-hidden border bg-gray-50 rounded-full"
+                    >
+                        <Image
+                            class="rounded-full border shadow-lg"
+                            src={profilePhoto}
+                            alt="Irina Kramer profile photo"
+                        />
+                    </div>
+                </div>
+
+                <p
+                    class="max-w-xl mx-auto font-serif text-xl text-gray-500"
+                >
+                    <em>
+                        Hello! I'm Irina Kramer, a freelance web
+                        developer and designer. I specialize in
+                        developing ecommerce websites that are
+                        beautiful, fast and converting. I'm well
+                        versed in the latest web tech and enjoy
+                        helping brands stand out by finding creative
+                        solutions and providing exceptional work. I'm
+                        based in Petaluma, California.
+                    </em>
+                </p>
+            </div>
         </div>
     </section>
 
@@ -99,26 +112,35 @@ import carmel from "../images/carmel.jpg";
 
     <!-- services -->
     <section>
-        <div class="px-8 py-24 mx-auto md:px-12 lg:px-32 max-w-7xl">
-            <div class="text-center">
-                <h2
-                    class="text-4xl font-semibold tracking-tighter text-gray-900 mb-8 lg:mb-12"
-                >
-                    Web Services
-                </h2>
-            </div>
+        <div class="relative">
             <div
-                class="flex flex-wrap justify-center text-sm font-medium text-center text-gray-500 gap-x-6 gap-y-12 lg:gap-x-8 lg:gap-y-16 text-balance"
+                class="absolute top-0 z-[-2] h-full w-full rotate-180 transform bg-white bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,rgba(252,205,238,.5)_100%)]"
             >
-                {
-                    services.map((service) => (
-                        <ServicesCard
-                            name={service.name}
-                            description={service.description}
-                            icon={service.icon}
-                        />
-                    ))
-                }
+            </div>
+
+            <div
+                class="px-8 py-24 mx-auto md:px-12 lg:px-32 max-w-7xl"
+            >
+                <div class="text-center">
+                    <h2
+                        class="text-4xl font-semibold tracking-tighter text-gray-900 mb-8 lg:mb-12"
+                    >
+                        Web Services
+                    </h2>
+                </div>
+                <div
+                    class="flex flex-wrap justify-center text-sm font-medium text-center text-gray-500 gap-x-6 gap-y-12 lg:gap-x-8 lg:gap-y-16 text-balance"
+                >
+                    {
+                        services.map((service) => (
+                            <ServicesCard
+                                name={service.name}
+                                description={service.description}
+                                icon={service.icon}
+                            />
+                        ))
+                    }
+                </div>
             </div>
         </div>
     </section>
@@ -155,10 +177,10 @@ import carmel from "../images/carmel.jpg";
                     class="order-first block w-full mt-12 aspect-square lg:mt-0"
                 >
                     <div
-                        class="h-full p-2 overflow-hidden border shadow-lg bg-gray-50 rounded-3xl"
+                        class="h-full p-2 overflow-hidden border bg-gray-50 rounded-3xl"
                     >
                         <Image
-                            class="relative w-full rounded-2xl drop-shadow-2xl"
+                            class="relative w-full rounded-2xl border shadow-lg"
                             src={carmel}
                             alt="Carmel photo"
                         />
@@ -201,43 +223,49 @@ import carmel from "../images/carmel.jpg";
     <section>
         <div class="px-8 py-12 mx-auto md:px-12 lg:px-32 max-w-7xl">
             <div class="p-2 border bg-gray-50 rounded-3xl">
-                <div
-                    class="p-10 text-center bg-white border shadow-lg md:p-20 rounded-3xl"
-                >
-                    <p
-                        class="mt-8 text-4xl font-semibold tracking-tighter text-black"
-                    >
-                        Hire me
-                    </p>
-                    <p
-                        class="w-1/2 mx-auto mt-4 text-base text-gray-500 text-balance"
-                    >
-                        If you're prepared to talk about your project,
-                        send me an email outlining the details, and
-                        I'll respond promptly with a quote or
-                        proposal. Thank you!
-                    </p>
+                <div class="relative bg-white">
                     <div
-                        class="flex flex-col items-center justify-center gap-2 mx-auto mt-8 md:flex-row"
+                        class="absolute top-0 h-full w-full bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] rounded-2xl"
                     >
-                        <a
-                            class="inline-flex items-center justify-center w-full h-12 gap-3 px-5 py-3 bg-gray-100 md:w-auto rounded-xl hover:bg-gray-200 focus:outline-none"
-                            href="mailto:irinakramer.pro@gmail.com?subject=Inquiry from website"
-                            ><svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="ionicon size-4"
-                                viewBox="0 0 512 512"
-                                ><path
-                                    d="M470.3 271.15L43.16 447.31a7.83 7.83 0 01-11.16-7V327a8 8 0 016.51-7.86l247.62-47c17.36-3.29 17.36-28.15 0-31.44l-247.63-47a8 8 0 01-6.5-7.85V72.59c0-5.74 5.88-10.26 11.16-8L470.3 241.76a16 16 0 010 29.39z"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="32"></path></svg
-                            ><span class="text-xs text-gray-600"
-                                >Contact</span
-                            ></a
+                    </div>
+                    <div
+                        class="p-10 text-center border shadow-lg md:p-20 rounded-2xl"
+                    >
+                        <p
+                            class="mt-8 text-4xl font-semibold tracking-tighter text-black"
                         >
+                            Hire me
+                        </p>
+                        <p
+                            class="w-1/2 mx-auto mt-4 text-base text-gray-500 text-balance"
+                        >
+                            If you're prepared to talk about your
+                            project, send me an email outlining the
+                            details, and I'll respond promptly with a
+                            quote or proposal. Thank you!
+                        </p>
+                        <div
+                            class="flex flex-col items-center justify-center gap-2 mx-auto mt-8 md:flex-row"
+                        >
+                            <a
+                                class="inline-flex items-center justify-center w-full h-12 gap-3 px-5 py-3 bg-gray-100 md:w-auto rounded-xl hover:bg-gray-200 focus:outline-none"
+                                href="mailto:irinakramer.pro@gmail.com?subject=Inquiry from website"
+                                ><svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="ionicon size-4"
+                                    viewBox="0 0 512 512"
+                                    ><path
+                                        d="M470.3 271.15L43.16 447.31a7.83 7.83 0 01-11.16-7V327a8 8 0 016.51-7.86l247.62-47c17.36-3.29 17.36-28.15 0-31.44l-247.63-47a8 8 0 01-6.5-7.85V72.59c0-5.74 5.88-10.26 11.16-8L470.3 241.76a16 16 0 010 29.39z"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="32"></path></svg
+                                ><span class="text-xs text-gray-600"
+                                    >Contact</span
+                                ></a
+                            >
+                        </div>
                     </div>
                 </div>
             </div>

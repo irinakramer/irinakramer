@@ -23,16 +23,7 @@ const projects = [
         year: "2021 - 2023",
         company: "SmartBiz",
     },
-    {
-        name: "Bouquet",
-        url: "https://bouquet-topaz.vercel.app/",
-        description:
-            "This app is a guide to help you identify aromas and scents present in most wine families. Full CRUD app.",
-        tech: "React, Material UI, GeoCharts API, Back4App",
-        image: projBouquet,
-        year: "2021 - 2023",
-        company: "Personal",
-    },
+
     {
         name: "JOBY.com eCommerce",
         url: "http://joby.com/us-en/",
@@ -62,6 +53,16 @@ const projects = [
         image: projAmbassadors,
         year: "2019",
         company: "Vitec",
+    },
+    {
+        name: "Bouquet",
+        url: "https://bouquet-topaz.vercel.app/",
+        description:
+            "This app is a guide to help you identify aromas and scents present in most wine families. Full CRUD app.",
+        tech: "React, Material UI, GeoCharts API, Back4App",
+        image: projBouquet,
+        year: "2021 - 2023",
+        company: "Personal",
     },
     // {
     //     name: "Brand Ambassadors",
