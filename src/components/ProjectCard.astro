@@ -2,17 +2,19 @@
 const { name, url, tech, image } = Astro.props;
 ---
 
-<a href={url} class="overflow-hidden rounded-md bg-gray-100"
+<a
+    href={url}
+    class="overflow-hidden rounded-md bg-neutral-100 border border-neutral-200"
     ><div class="p-4 lg:px-12 lg:py-24">
         <img
-            class="duration-500 rounded-lg shadow hover:shadow-3xl hover:-translate-y-4"
+            class="duration-500 rounded-lg shadow-md hover:shadow-2xl hover:-translate-y-4"
             src={image}
             alt={name}
         />
-        <h3 class="mt-8 text-base text-gray-900">
+        <h3 class="mt-8 text-base text-neutral-900">
             {name}
         </h3>
-        <p class="mt-2 text-sm text-gray-500">
+        <p class="mt-2 text-sm text-neutral-500">
             {tech}
         </p>
     </div></a

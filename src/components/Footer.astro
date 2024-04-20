@@ -1,6 +1,7 @@
 ---
 import Spiral from "./icons/Spiral.astro";
 const currentYear = new Date().getFullYear();
+import Palette from "./Palette.astro";
 ---
 
 <footer>
@@ -16,7 +17,7 @@ const currentYear = new Date().getFullYear();
                 x-data="{ year: new Date().getFullYear() }"
             >
                 <span
-                    class="mx-auto mt-2 text-sm font-medium text-gray-500"
+                    class="mx-auto mt-2 text-sm font-medium text-neutral-500"
                 >
                     Copyright © <span x-text="year"
                         >{currentYear}</span
@@ -24,11 +25,13 @@ const currentYear = new Date().getFullYear();
                     <a
                         aria-label="irina kramer"
                         href="#_"
-                        class="mx-2 text-blue-500 hover:text-blue-400"
+                        class="mx-2 text-rose-600 hover:text-rose-400"
                         >Irina Kramer</a
                     >
                 </span>
             </div>
         </div>
     </div>
+
+    <!-- <Palette /> -->
 </footer>

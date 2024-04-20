@@ -4,16 +4,16 @@ const link =
     "https://www.linkedin.com/in/irinakramer/details/recommendations/";
 ---
 
-<li class="p-2 border bg-gray-50 rounded-3xl">
+<li class="p-2 border border-neutral-200 bg-neutral-100 rounded-3xl">
     <figure
-        class="flex flex-col justify-between h-full p-6 bg-white border shadow-lg rounded-2xl"
+        class="flex flex-col justify-between h-full p-6 bg-white border border-neutral-200 shadow-lg rounded-2xl"
     >
         <blockquote class="text-ellipsis overflow-hidden">
-            <p class="text-base text-gray-500">
+            <p class="text-base text-neutral-500">
                 {text}
                 <a
                     href={link}
-                    class="text-blue-500 hover:text-blue-400"
+                    class="text-rose-600 hover:text-rose-400"
                 >
                     More...</a
                 >
@@ -23,14 +23,14 @@ const link =
             class="flex items-center justify-between pt-6 mt-6"
         >
             <div>
-                <div class="font-medium text-gray-900">
+                <div class="font-medium text-neutral-900">
                     {author}
                 </div>
-                <div class="mt-1 text-sm text-gray-500">
+                <div class="mt-1 text-sm text-neutral-500">
                     {title}
                 </div>
             </div>
-            <div class="overflow-hidden rounded-full bg-gray-50">
+            <div class="overflow-hidden rounded-full bg-neutral-50">
                 <img
                     alt="#_"
                     src={avatar}
