@@ -7,41 +7,63 @@ import BSA_Debt_Schedule from "../../images/projects/BSA_Debt_Schedule.png";
 ---
 
 <Layout title="Irina Kramer - Frontend Engineer - BSA project">
-    <div>
-        <h2 class="text-base font-semibold mb-4">
-            Bank Statement Analysis tool
-        </h2>
+    <div
+        class="px-8 py-10 mx-auto md:px-12 lg:px-24 text-neutral-500"
+    >
+        <div class="text-center">
+            <h2
+                class="text-4xl noto-serif font-semibold tracking-tighter text-neutral-900 mb-8 lg:mb-12"
+            >
+                Bank Statement Analysis tool
+            </h2>
+        </div>
         <p class="mb-6">
-            <span class="font-semibold">Summary:</span> The BSA tool
-            is an internal resource designed to aid Relationship
-            Managers (RMs) in swiftly reviewing customer bank
-            statements, facilitating streamlined underwriting
-            decisions. This tool enhances the business's ability to
-            process a higher volume of loan applications quickly and
-            efficiently.
+            <span class="font-semibold">Summary:</span> I was solely responsible
+            for the frontend architecture and implementation of the loan
+            underwriting workflow automation tool (Bank Statement Analyzer
+            - BSA tool), while working at SmartBiz Loans. The app assisted
+            the staff underwriters in determining the credit worthiness
+            of the applicants by automating the calculation of various
+            key financial metrics. Using this tool resulted in 65% reduction
+            of the loan processing time. The application, written in React,
+            consumed RESTful and Graph APIs to communicate with Python
+            backend systems and SQL databases, and used CRUD persistent
+            storage methods.
         </p>
         <section class="mb-8">
-            <h3 class="mb-2">Analysis page</h3>
+            <h3
+                class="text-2xl noto-serif font-semibold tracking-tighter text-neutral-600 mb-2"
+            >
+                Analysis page
+            </h3>
             <Image
-                class="rounded-md"
+                class="rounded-md w-auto border border-neutral-200"
                 src={BSA_Anaysis_terms}
                 alt="BSA Analysis page"
             />
         </section>
 
         <section class="mb-8">
-            <h3 class="mb-2">Transactions page</h3>
+            <h3
+                class="text-2xl noto-serif font-semibold tracking-tighter text-neutral-600 mb-2"
+            >
+                Transactions page
+            </h3>
             <Image
-                class="rounded-md"
+                class="rounded-md border border-neutral-200"
                 src={BSA_Transactions}
                 alt="BSA Transactions page"
             />
         </section>
 
         <section class="mb-8">
-            <h3 class="mb-2">Debt Schedule page</h3>
+            <h3
+                class="text-2xl noto-serif font-semibold tracking-tighter text-neutral-600 mb-2"
+            >
+                Debt Schedule page
+            </h3>
             <Image
-                class="rounded-md"
+                class="rounded-md border border-neutral-200"
                 src={BSA_Debt_Schedule}
                 alt="BSA Debt Schedule page"
             />
