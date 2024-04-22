@@ -31,8 +31,26 @@ const { title } = Astro.props;
             sizes="16x16"
             href="/favicon-16x16.png"
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
         <meta name="generator" content={Astro.generator} />
         <title>{title}</title>
+        <style is:global>
+            .noto-serif {
+                font-family: "Noto Serif", serif;
+                font-optical-sizing: auto;
+                font-style: normal;
+                font-variation-settings: "wdth" 100;
+            }
+        </style>
     </head>
     <body class="bg-neutral-50">
         <Header />
