@@ -29,7 +29,7 @@ const skills = [
     {
         name: "React",
         description:
-            "Build and deployed several production level React apps",
+            "Built and deployed several production level React apps",
         logo: react,
     },
     {
