@@ -11,19 +11,19 @@ import projShoppingAssistant from "../images/projects/ShoppingAssistant.png";
 import projMathSkills from "../images/projects/MathSkills.png";
 import projBouquet from "../images/projects/bouquet.jpg";
 import ComingSoon from "../images/projects/ComingSoon.svg";
+import dianamajumdarart from "../images/projects/dianamajumdarart.jpg";
 
 const projects = [
     {
-        name: "Bank Statement Analyzer",
-        url: "../projects/bsa",
+        name: "Diana Majumdar Art eCommerce",
+        url: "http://dianamajumdarart.com",
         description:
-            "Full stack app to analyze bank transactions and calculate ratios for loan eligibility",
-        tech: "React, Chakra UI, Rest/GraphQL APIs, Flask",
-        image: bsa,
-        year: "2021 - 2023",
-        company: "SmartBiz",
+            "Responsive templates for product, category, shopping cart pages, tech specs feed, and marketing landing pages.",
+        tech: "Wordpress Elementor, Woocommerce, PHP, CSS",
+        image: dianamajumdarart,
+        year: "2024",
+        company: "IKON web studio",
     },
-
     {
         name: "JOBY.com eCommerce",
         url: "http://joby.com/us-en/",
@@ -43,6 +43,16 @@ const projects = [
         image: projLowepro,
         year: "2019",
         company: "Vitec",
+    },
+    {
+        name: "Bank Statement Analyzer",
+        url: "../projects/bsa",
+        description:
+            "Full stack app to analyze bank transactions and calculate ratios for loan eligibility",
+        tech: "React, Chakra UI, Rest/GraphQL APIs, Flask",
+        image: bsa,
+        year: "2021 - 2023",
+        company: "SmartBiz",
     },
     {
         name: "Loweprofessionals",
