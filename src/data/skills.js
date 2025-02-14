@@ -6,60 +6,84 @@ import magento from "../icons/logos/magento.svg?raw";
 import react from "../icons/logos/react.svg?raw";
 import tailwind from "../icons/logos/tailwind-css.svg?raw";
 import wordpress from "../icons/logos/wordpress.svg?raw";
+import shopify from "../icons/logos/shopify.svg?raw";
+import woo from "../icons/logos/woo.svg?raw";
+import wix from "../icons/logos/wix.svg?raw";
+import php from "../icons/logos/php.svg?raw";
 
 const skills = [
     {
-        name: "JavaScript",
-        description:
-            "Vanilla JavaScript, DOM, libraries, consuming REST APIs",
-        logo: javascript,
+        name: "Shopify",
+        description: "",
+        logo: shopify,
     },
     {
-        name: "HTML",
-        description:
-            "Web page structure, layout, responsiveness and accessibility",
-        logo: html,
+        name: "WooCommerce",
+        description: "",
+        logo: woo,
     },
     {
-        name: "CSS",
-        description:
-            "Highly proficient in CSS and its efficient use, pre-processors and libraries ",
-        logo: css3,
+        name: "Wix",
+        description: "",
+        logo: wix,
     },
-    {
-        name: "React",
-        description:
-            "Built and deployed several production level React apps",
-        logo: react,
-    },
-    {
-        name: "Tailwind CSS",
-        description:
-            "Library of choice when working with static sites",
-        logo: tailwind,
-    },
-    {
-        name: "Astro",
-        description: "Favorite static site generator framework",
-        logo: astro,
-    },
+    // {
+    //     name: "PHP",
+    //     description: "",
+    //     logo: php,
+    // },
+    // {
+    //     name: "JavaScript",
+    //     description:
+    //         "Vanilla JavaScript, DOM, libraries, consuming REST APIs",
+    //     logo: javascript,
+    // },
+    // {
+    //     name: "HTML",
+    //     description:
+    //         "Web page structure, layout, responsiveness and accessibility",
+    //     logo: html,
+    // },
+    // {
+    //     name: "CSS",
+    //     description:
+    //         "Highly proficient in CSS and its efficient use, pre-processors and libraries ",
+    //     logo: css3,
+    // },
+    // {
+    //     name: "React",
+    //     description:
+    //         "Built and deployed several production level React apps",
+    //     logo: react,
+    // },
+    // {
+    //     name: "Tailwind CSS",
+    //     description:
+    //         "Library of choice when working with static sites",
+    //     logo: tailwind,
+    // },
+    // {
+    //     name: "Astro",
+    //     description: "Favorite static site generator framework",
+    //     logo: astro,
+    // },
     // {
     //     name: "Rest APIs",
     //     description: "Experience with consuming Rest APIs in production with all CRUD methods",
     //     logo: "",
     // },
-    {
-        name: "Wordpress",
-        description:
-            "Websites and blogs with custom fields and core Wordpress API",
-        logo: wordpress,
-    },
-    {
-        name: "Magento",
-        description:
-            "Large multi-store ecommerce websites, theming, custom templates",
-        logo: magento,
-    },
+    // {
+    //     name: "Wordpress",
+    //     description:
+    //         "Websites and blogs with custom fields and core Wordpress API",
+    //     logo: wordpress,
+    // },
+    // {
+    //     name: "Magento",
+    //     description:
+    //         "Large multi-store ecommerce websites, theming, custom templates",
+    //     logo: magento,
+    // },
     // {
     //     name: "WooCommerce",
     //     description: "",

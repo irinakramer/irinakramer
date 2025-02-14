@@ -8,9 +8,10 @@ import skills from "../data/skills";
 import services from "../data/services";
 import testimonials from "../data/testimonials";
 import TestimonialCard from "../components/TestimonialCard.astro";
+import ContactButton from "../components/ContactButton.astro";
 import { Image } from "astro:assets";
-import profilePhoto from "../images/profilePhoto.jpg";
-import carmel from "../images/carmel.jpg";
+import profilePhoto from "../images/profilePhoto_jan2025.jpg";
+import aboutPhoto from "../images/about_photo.jpg";
 ---
 
 <Layout title="Irina Kramer - Freelance web developer">
@@ -35,33 +36,33 @@ import carmel from "../images/carmel.jpg";
                         />
                     </div>
                 </div>
+                <div class="text-center">
+                    <h1
+                        class="text-4xl noto-serif font-semibold tracking-tighter text-neutral-900 mb-4 lg:mb-4"
+                    >
+                        Irina Kramer
+                    </h1>
+                    <p
+                        class="text-base noto-serif text-neutral-500 mb-4 lg:mb-4"
+                    >
+                        Helping artists & creatives sell beautifully
+                        online
+                    </p>
+                </div>
 
                 <p
-                    class="max-w-xl mx-auto noto-serif text-lg text-neutral-500"
+                    class="max-w-xl mx-auto mb-4 noto-serif text-lg text-neutral-500"
                 >
                     <em>
-                        Hello! I'm Irina Kramer, a freelance web
-                        developer and designer based in Petaluma,
-                        California. I create beautiful,
-                        high-performing <a
-                            class="text-rose-600 hover:text-rose-400"
-                            href="#portfolio">eCommerce websites</a
-                        > that help brands grow and sell online. With <a
-                            class="text-rose-600 hover:text-rose-400"
-                            href="#tech-stack">expertise</a
-                        > in front-end development, UX/UI design, and platforms
-                        like Shopify, WooCommerce, and Wix, I craft seamless
-                        shopping experiences that drive conversions. I’m
-                        passionate about working with creators, artists,
-                        and independent brands to bring their unique visions
-                        to life. If you're looking for a partner to elevate
-                        your online store, let’s <a
-                            class="text-rose-600 hover:text-rose-400"
-                            href="mailto:irinamkra@gmail.com?subject=Inquiry from website"
-                            >connect</a
-                        >!
+                        I'm a web developer and designer specializing
+                        in creating eCommerce websites for artists and
+                        creative brands. With strong coding skills and
+                        expertise in Shopify, WooCommerce, and Wix, I
+                        can help you sell your products online and
+                        elevate your brand’s digital presence.
                     </em>
                 </p>
+                <ContactButton text="Let's Connect" />
             </div>
         </div>
     </section>
@@ -80,7 +81,7 @@ import carmel from "../images/carmel.jpg";
                 </h2>
             </div>
             <div
-                class="grid grid-cols-1 gap-4 mx-auto text-sm font-medium lg:gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl"
+                class="grid grid-cols-1 gap-4 mx-auto text-sm font-medium lg:gap-8 sm:grid-cols-2 lg:grid-cols-2 max-w-7xl"
             >
                 {
                     projects.map((project) => (
@@ -94,10 +95,11 @@ import carmel from "../images/carmel.jpg";
                 }
             </div>
         </div>
+        <br /><br />
     </section>
 
     <!-- skills -->
-    <section>
+    <!-- <section>
         <div class="px-8 py-24 mx-auto md:px-12 lg:px-32 max-w-7xl">
             <div class="text-center">
                 <h2
@@ -121,7 +123,7 @@ import carmel from "../images/carmel.jpg";
                 }
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- services -->
     <section>
@@ -136,11 +138,15 @@ import carmel from "../images/carmel.jpg";
             >
                 <div class="text-center">
                     <h2
-                        class="text-4xl noto-serif font-semibold tracking-tighter text-neutral-900 mb-8 lg:mb-12"
+                        class="text-4xl noto-serif font-semibold tracking-tighter text-neutral-900 mb-8 lg:mb-4"
                         id="web-services"
                     >
                         Web Services
                     </h2>
+                    <p class="noto-serif text-neutral-500 mb-8">
+                        Custom ecommerce solutions for your business
+                        online growth
+                    </p>
                 </div>
                 <div
                     class="flex flex-wrap justify-center text-sm font-medium text-center text-neutral-500 gap-x-6 gap-y-12 lg:gap-x-8 lg:gap-y-16 text-balance"
@@ -159,7 +165,7 @@ import carmel from "../images/carmel.jpg";
         </div>
     </section>
 
-    <!-- outsourcing -->
+    <!-- About -->
     <section>
         <div class="px-8 py-24 mx-auto md:px-12 lg:px-32 max-w-7xl">
             <div
@@ -169,22 +175,43 @@ import carmel from "../images/carmel.jpg";
                     <h2
                         class="text-4xl noto-serif font-semibold tracking-tighter text-neutral-900 text-balance"
                     >
-                        Outsourcing services
-                        <span class="text-neutral-600"
-                            >for digital agencies</span
-                        >
+                        About
                     </h2>
-                    <p
-                        class="mt-4 text-base font-medium text-neutral-500"
-                    >
-                        I provide freelance web development tailored
-                        for digital agencies, offering long-term
-                        support at competitive rates. Eliminate the
-                        hassles of employment bureaucracy and extra
-                        expenses. My focus is on delivering
-                        high-quality results, giving you the peace of
-                        mind to focus on your core business — or even
-                        take that well-deserved vacation!
+                    <p class="mt-4 mb-4 text-base text-neutral-500">
+                        I've been in the web industry for 20 years,
+                        working as a web designer, web app developer,
+                        web project manager, and most recently, a
+                        software engineer. My experience spans both
+                        tech and consumer goods, from small startups
+                        to large international companies.
+                    </p>
+                    <p class="mb-4 text-base text-neutral-500">
+                        Some of my most fulfilling and creative years
+                        were spent developing ecommerce sites for
+                        brands like Lowepro, JOBY, and Manfrotto.
+                        During that time, I gained hands-on experience
+                        with ecommerce platforms, product and category
+                        pages, product photography, SEO, sales, email
+                        campaigns, and inventory management. It was
+                        like seeing an entire business from 1,000 feet
+                        up, then zooming in to the smallest details.
+                    </p>
+                    <p class="mb-4 text-base text-neutral-500">
+                        Beyond ecommerce, I have a deep appreciation
+                        for small businesses, creative entrepreneurs,
+                        and artists. In 2023, I left the corporate
+                        world to focus on helping them succeed online.
+                        Today, I specialize in building and supporting
+                        high-performing, custom ecommerce sites on
+                        Shopify and WooCommerce.
+                    </p>
+                    <p class="text-base text-neutral-500">
+                        If you're looking for a strategic partner to
+                        bring your online store to life, <a
+                            href="mailto:irinakramer@yahoo.com?subject=Inquiry from website"
+                            class="text-rose-600 hover:text-rose-400"
+                            >I'd love to chat about your next project</a
+                        >.
                     </p>
                 </div>
                 <div
@@ -195,8 +222,8 @@ import carmel from "../images/carmel.jpg";
                     >
                         <Image
                             class="relative w-full rounded-2xl border border-neutral-200 shadow-lg"
-                            src={carmel}
-                            alt="Carmel photo"
+                            src={aboutPhoto}
+                            alt="Irina Kramer photo"
                         />
                     </div>
                 </div>
@@ -211,7 +238,7 @@ import carmel from "../images/carmel.jpg";
                 <h2
                     class="text-4xl noto-serif font-semibold tracking-tighter text-neutral-900 mb-8 lg:mb-12"
                 >
-                    What my colleagues and clients are saying
+                    What my clients and colleagues are saying
                 </h2>
             </div>
             <ul
@@ -245,39 +272,22 @@ import carmel from "../images/carmel.jpg";
                     <div
                         class="p-10 text-center border border-neutral-200 shadow-lg md:p-20 rounded-2xl"
                     >
-                        <h2
+                        <!-- <h2
                             class="mt-8 text-4xl noto-serif font-semibold tracking-tighter text-black"
                         >
                             Hire me
-                        </h2>
+                        </h2> -->
                         <p
                             class="md:w-1/2 mx-auto mt-4 text-base text-neutral-500 text-balance"
                         >
                             If you're prepared to talk about your
                             project, send me an email and I'll respond
-                            promptly with next steps. Thank you!
+                            promptly with next steps.
                         </p>
                         <div
                             class="flex flex-col items-center justify-center gap-2 mx-auto mt-8 md:flex-row"
                         >
-                            <a
-                                class="inline-flex items-center justify-center w-auto h-12 gap-3 px-5 py-3 bg-rose-800 rounded-xl hover:bg-rose-600 focus:outline-none transition-colors"
-                                href="mailto:irinamkra@gmail.com?subject=Inquiry from website"
-                                ><svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    class="ionicon size-4 stroke-neutral-100"
-                                    viewBox="0 0 512 512"
-                                    ><path
-                                        d="M470.3 271.15L43.16 447.31a7.83 7.83 0 01-11.16-7V327a8 8 0 016.51-7.86l247.62-47c17.36-3.29 17.36-28.15 0-31.44l-247.63-47a8 8 0 01-6.5-7.85V72.59c0-5.74 5.88-10.26 11.16-8L470.3 241.76a16 16 0 010 29.39z"
-                                        fill="none"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="32"></path></svg
-                                ><span
-                                    class="text-sm text-neutral-100"
-                                    >Contact</span
-                                ></a
-                            >
+                            <ContactButton text="Let's Connect" />
                         </div>
                     </div>
                 </div>

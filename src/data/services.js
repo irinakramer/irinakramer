@@ -1,44 +1,24 @@
-import frontend from "../icons/services/web_development.png";
 import ecommerce from "../icons/services/ecommerce.png";
-import cms from "../icons/services/web_page.png";
 import webpage from "../icons/services/web_diagram.png";
-import app from "../icons/services/app_development.png";
 import support from "../icons/services/web_link.png";
 
 const services = [
     {
-        name: "Custom websites",
+        name: "Ecommerce Development (Shopify, WooCommerce, Wix)",
         description:
-            "Tailored sites built from scratch with the latest web tech.",
-        icon: frontend,
-    },
-    {
-        name: "E-Commerce",
-        description:
-            "Powerful online stores in Magento, WooCommerce, etc.",
-        icon: ecommerce,
-    },
-    {
-        name: "Landing pages",
-        description:
-            "Custom one-pagers for product promotion and email collection.",
+            "Build new ecommerce websites using Shopify, WooCommerce (WordPress), or Wix. Enhance and optimize existing stores with new features and improvements.",
         icon: webpage,
     },
     {
-        name: "Wordpress",
+        name: "SEO & Google Shopping Integration",
         description:
-            "Off-the-shelf and custom themes, tailored to your needs.",
-        icon: cms,
+            "Implement basic SEO best practices, set up Google Search Console and Google Merchant to enable your products in Google Shopping tab.",
+        icon: ecommerce,
     },
     {
-        name: "App development",
-        description: "Web apps in React for workflow enhancement.",
-        icon: app,
-    },
-    {
-        name: "Support",
+        name: "Web Hosting & Ongoing Support",
         description:
-            "Ongoing technical support, collaboration, and consulting.",
+            "Provide monthly hosting for WordPress/WooCommerce sites, along with regular app updates and support as needed.",
         icon: support,
     },
 ];

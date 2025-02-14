@@ -12,8 +12,18 @@ import projMathSkills from "../images/projects/MathSkills.png";
 import projBouquet from "../images/projects/bouquet.jpg";
 import ComingSoon from "../images/projects/ComingSoon.svg";
 import dianamajumdarart from "../images/projects/dianamajumdarart.jpg";
+import fibercirclestudio from "../images/projects/fiber_circle_studio.jpg";
 
 const projects = [
+    {
+        name: "Fiber Circle Studio",
+        url: "https://fibercirclestudio.com/",
+        description: "tbd",
+        tech: "Shopify, Liquid, HTML, CSS",
+        image: fibercirclestudio,
+        year: "2025",
+        company: "IKON web studio",
+    },
     {
         name: "Diana Majumdar Art eCommerce",
         url: "http://dianamajumdarart.com",
@@ -133,15 +143,15 @@ const projects = [
     //     image: projShoppingAssistant,
     //     year: "2018",
     // },
-    {
-        name: "Responsive Mega Menu",
-        url: "https://irinakramer.github.io/mega-menu/",
-        description:
-            "Lightweight CSS menu for JOBY.com with CSS gradients, transitions, SVG icons, focus on performance and scalability.",
-        tech: "CSS, HTML, SVG animation",
-        image: projMegaMenu,
-        year: "2017",
-    },
+    // {
+    //     name: "Responsive Mega Menu",
+    //     url: "https://irinakramer.github.io/mega-menu/",
+    //     description:
+    //         "Lightweight CSS menu for JOBY.com with CSS gradients, transitions, SVG icons, focus on performance and scalability.",
+    //     tech: "CSS, HTML, SVG animation",
+    //     image: projMegaMenu,
+    //     year: "2017",
+    // },
     // {
     //     name: "Responsive Grid with Flexbox",
     //     url: "https://codepen.io/irinakramer/pen/jcLlp",
