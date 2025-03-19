@@ -6,8 +6,6 @@ import ServicesCard from "../components/ServicesCard.astro";
 import projects from "../data/projects.js";
 import skills from "../data/skills";
 import services from "../data/services";
-import testimonials from "../data/testimonials";
-import TestimonialCard from "../components/TestimonialCard.astro";
 import ContactButton from "../components/ContactButton.astro";
 import { Image } from "astro:assets";
 import profilePhoto from "../images/profilePhoto.jpg";
@@ -17,17 +15,13 @@ import aboutPhoto from "../images/aboutPhoto.jpg";
 <Layout title="Irina Kramer - eCommerce web developer and designer">
     <!-- Hero -->
     <section>
-        <div class="fixed left-0 top-0 -z-10 h-full w-full">
-            <div
-                class="absolute top-0 z-[-2] h-screen w-screen rotate-180 transform bg-white bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,rgba(252,205,238,.5)_100%)]"
-            >
-            </div>
-        </div>
-        <div class="relative px-6 py-14 lg:px-8">
+        <div
+            class="relative px-6 py-14 lg:px-8 bg-[url(public/background.jpg)] bg-cover bg-center"
+        >
             <div class="mx-auto max-w-2xl py-18">
-                <div class="mx-auto w-32 pb-2 sm:pb-6">
+                <div class="mx-auto w-40 pb-2 sm:pb-6">
                     <Image
-                        class="rounded-2xl border-neutral-200 shadow-xl"
+                        class="rounded-full border-white border-8"
                         src={profilePhoto}
                         alt="Irina Kramer profile photo"
                     />
@@ -35,7 +29,7 @@ import aboutPhoto from "../images/aboutPhoto.jpg";
 
                 <div class="hidden sm:mb-8 sm:flex sm:justify-center">
                     <div
-                        class="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
+                        class="relative rounded-full px-3 py-1 text-sm/6 ring-1 ring-gray-900/30"
                     >
                         Hi, I'm Irina Kramer
                     </div>
@@ -47,9 +41,7 @@ import aboutPhoto from "../images/aboutPhoto.jpg";
                         I help artists and creators sell beautifully
                         online
                     </h1>
-                    <p
-                        class="mt-8 text-lg text-pretty text-gray-500 sm:text-xl/8"
-                    >
+                    <p class="mt-8 text-lg text-pretty sm:text-xl/8">
                         I'm a web developer and designer specializing
                         in creating eCommerce websites for artists,
                         makers and creative brands. With strong coding
@@ -67,280 +59,10 @@ import aboutPhoto from "../images/aboutPhoto.jpg";
         </div>
     </section>
 
-    <!-- testimonials grid -->
-    <section>
-        <div class="bg-white py-24">
-            <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-                <h2
-                    class="text-center text-base/7 font-semibold text-indigo-600"
-                >
-                    Testimonials
-                </h2>
-                <p
-                    class="mx-auto mt-2 max-w-lg text-center text-4xl font-semibold tracking-tight text-balance text-gray-950 sm:text-5xl"
-                >
-                    What my clients and colleagues are saying
-                </p>
-                <div
-                    class="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2"
-                >
-                    <div class="relative lg:row-span-2">
-                        <div
-                            class="absolute inset-px rounded-lg bg-pink-50 lg:rounded-l-[2rem]"
-                        >
-                        </div>
-                        <div
-                            class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-l-[calc(2rem+1px)]"
-                        >
-                            <div
-                                class="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0"
-                            >
-                                <p
-                                    class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center"
-                                >
-                                    <strong
-                                        >"I am beyond thrilled with my
-                                        new website</strong
-                                    >, thanks to the incredible work
-                                    of Irina Kramer. I wanted
-                                    something that truly reflected my
-                                    work as a fine art painter, and
-                                    Irina made it happen seamlessly.
-                                </p>
-                                <p
-                                    class="my-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center"
-                                >
-                                    What impressed me most was how
-                                    much research she did on her own.
-                                    She explored artist websites,
-                                    picked out the best elements, and
-                                    came back with a fully developed
-                                    vision. From adding a short video
-                                    of me painting on the "About page"
-                                    to designing a layout that
-                                    beautifully showcases my work, to
-                                    adding purchase options or
-                                    registering for a class, she
-                                    thought of everything. All I had
-                                    to do was provide access to my
-                                    images — she handled the rest. The
-                                    result is a stunning, professional
-                                    site that feels like an extension
-                                    of my art. I can’t recommend Irina
-                                    highly enough!"
-                                </p>
-                                <!-- <img
-                                    class="mx-auto size-10 rounded-full"
-                                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                    alt=""
-                                /> -->
-                                <div
-                                    class="mt-4 mb-8 flex items-center justify-center space-x-3 text-base"
-                                >
-                                    <div
-                                        class="font-semibold text-gray-900"
-                                    >
-                                        Diana Majumdar
-                                    </div>
-                                    <svg
-                                        viewBox="0 0 2 2"
-                                        width="3"
-                                        height="3"
-                                        aria-hidden="true"
-                                        class="fill-gray-900"
-                                    >
-                                        <circle cx="1" cy="1" r="1"
-                                        ></circle>
-                                    </svg>
-                                    <div class="text-gray-600">
-                                        Fine Artist
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 lg:rounded-l-[2rem]"
-                        >
-                        </div>
-                    </div>
-                    <div class="relative max-lg:row-start-1">
-                        <div
-                            class="absolute inset-px rounded-lg bg-teal-50 max-lg:rounded-t-[2rem]"
-                        >
-                        </div>
-                        <div
-                            class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]"
-                        >
-                            <div class="px-8 pt-8 sm:px-10 sm:pt-10">
-                                <p
-                                    class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center"
-                                >
-                                    "Irina is the type of professional
-                                    colleague everyone appreciates and
-                                    respects. Her combination of tech
-                                    knowledge, project management and
-                                    positive collaboration made our
-                                    sites engaging, clear, highly
-                                    functional and relevant."
-                                </p>
-                            </div>
-                            <!-- <img
-                                class="mx-auto size-10 rounded-full"
-                                src="https://ikonwebstudio.com/ik/images/avatars/katrina_neil.jpeg"
-                                alt=""
-                            /> -->
-                            <div
-                                class="mt-4 flex items-center justify-center space-x-3 text-base"
-                            >
-                                <div
-                                    class="font-semibold text-gray-900"
-                                >
-                                    Katrina Neill
-                                </div>
-                                <svg
-                                    viewBox="0 0 2 2"
-                                    width="3"
-                                    height="3"
-                                    aria-hidden="true"
-                                    class="fill-gray-900"
-                                >
-                                    <circle cx="1" cy="1" r="1"
-                                    ></circle>
-                                </svg>
-                                <div class="text-gray-600">
-                                    Senior Copywriter
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 max-lg:rounded-t-[2rem]"
-                        >
-                        </div>
-                    </div>
-                    <div
-                        class="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2"
-                    >
-                        <div
-                            class="absolute inset-px rounded-lg bg-teal-50"
-                        >
-                        </div>
-                        <div
-                            class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]"
-                        >
-                            <div class="px-8 pt-8 sm:px-10 sm:pt-10">
-                                <p
-                                    class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center"
-                                >
-                                    "Irina has a strong knowledge of
-                                    modern web development
-                                    technologies, including
-                                    JavaScript, HTML, CSS, and other
-                                    related tools. Moreover, Irina has
-                                    an eye for detail and always
-                                    ensures that her code is clean,
-                                    maintainable, and efficient."
-                                </p>
-                                <!-- <img
-                                    class="mx-auto size-10 rounded-full"
-                                    src="https://ikonwebstudio.com/ik/images/avatars/jeremy_lane.jpeg"
-                                    alt=""
-                                /> -->
-                                <div
-                                    class="mt-4 flex items-center justify-center space-x-3 text-base"
-                                >
-                                    <div
-                                        class="font-semibold text-gray-900"
-                                    >
-                                        Jeremy Lane
-                                    </div>
-                                    <svg
-                                        viewBox="0 0 2 2"
-                                        width="3"
-                                        height="3"
-                                        aria-hidden="true"
-                                        class="fill-gray-900"
-                                    >
-                                        <circle cx="1" cy="1" r="1"
-                                        ></circle>
-                                    </svg>
-                                    <div class="text-gray-600">
-                                        Engineering Leader
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5"
-                        >
-                        </div>
-                    </div>
-                    <div class="relative lg:row-span-2">
-                        <div
-                            class="absolute inset-px rounded-lg bg-pink-50 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"
-                        >
-                        </div>
-                        <div
-                            class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]"
-                        >
-                            <div
-                                class="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0"
-                            >
-                                <p
-                                    class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center"
-                                >
-                                    "Irina is passionate professional
-                                    always seeking to do the best work
-                                    possible, her experience, way of
-                                    thinking, patience and skills make
-                                    her a very talented software
-                                    engineer. I always feel like she
-                                    is in control and has a very well
-                                    designed plan to get the best
-                                    solution to any problem."
-                                </p>
-                                <!-- <img
-                                    class="mx-auto size-10 rounded-full"
-                                    src="https://ikonwebstudio.com/ik/images/avatars/gize_bonilla.jpeg"
-                                    alt=""
-                                /> -->
-                                <div
-                                    class="mt-4 flex items-center justify-center space-x-3 text-base"
-                                >
-                                    <div
-                                        class="font-semibold text-gray-900"
-                                    >
-                                        Gize Bonilla
-                                    </div>
-                                    <svg
-                                        viewBox="0 0 2 2"
-                                        width="3"
-                                        height="3"
-                                        aria-hidden="true"
-                                        class="fill-gray-900"
-                                    >
-                                        <circle cx="1" cy="1" r="1"
-                                        ></circle>
-                                    </svg>
-                                    <div class="text-gray-600">
-                                        Senior Engineering Manager
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"
-                        >
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- portfolio -->
     <section>
         <div
-            class="px-8 py-10 mx-auto text-center md:px-12 lg:px-24 text-neutral-500 bg-white"
+            class="px-8 py-10 mx-auto text-center md:px-12 md:py-16 lg:px-24 lg:py-20 text-neutral-500 bg-white"
         >
             <div class="text-center">
                 <h2
@@ -366,7 +88,203 @@ import aboutPhoto from "../images/aboutPhoto.jpg";
                 }
             </div>
         </div>
-        <br /><br />
+    </section>
+
+    <!-- testimonials -->
+    <section id="testimonials" class="bg-white pt-12">
+        <h2
+            class="text-center text-base/7 font-semibold text-indigo-600"
+        >
+            Testimonials
+        </h2>
+        <p
+            class="mx-auto mt-2 max-w-lg text-center text-4xl font-semibold tracking-tight text-balance text-gray-950 sm:text-5xl"
+        >
+            What my clients and colleagues are saying
+        </p>
+
+        <div
+            class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8"
+        >
+            <div
+                class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,var(--color-indigo-100),white)] opacity-20"
+            >
+            </div>
+            <div
+                class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white ring-1 shadow-xl shadow-indigo-600/10 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"
+            >
+            </div>
+            <div class="mx-auto max-w-2xl lg:max-w-4xl">
+                <img
+                    class="mx-auto h-16"
+                    src="https://fibercirclestudio.com/cdn/shop/products/1000x1000logo.jpg?v=1672540247&width=300"
+                    alt=""
+                />
+                <figure class="mt-10">
+                    <blockquote
+                        class="text-center text-xl/8 font-semibold text-gray-900 sm:text-2xl/9"
+                    >
+                        <p>
+                            "Irina is great to work with! She is
+                            knowledgeable, timely and very
+                            communicative. If she doesn't have an
+                            immediate answer, she will work to find
+                            it, always keeping me in the loop. Highly
+                            recommend her! You're amazing!! I keep
+                            telling people how lucky I am to have you
+                            helping with the website and all my misc
+                            tech things!"
+                        </p>
+                    </blockquote>
+                    <figcaption class="mt-10">
+                        <div
+                            class="mt-4 flex items-center justify-center space-x-3 text-base"
+                        >
+                            <div class="font-semibold text-gray-900">
+                                Alisha Bright
+                            </div>
+                            <svg
+                                viewBox="0 0 2 2"
+                                width="3"
+                                height="3"
+                                aria-hidden="true"
+                                class="fill-gray-900"
+                            >
+                                <circle cx="1" cy="1" r="1"></circle>
+                            </svg>
+                            <div class="text-gray-600">
+                                Fiber Circle Studio, owner & creator
+                            </div>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <div
+            class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8"
+        >
+            <div
+                class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,var(--color-indigo-100),white)] opacity-20"
+            >
+            </div>
+            <div
+                class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white ring-1 shadow-xl shadow-indigo-600/10 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"
+            >
+            </div>
+            <div class="mx-auto max-w-2xl lg:max-w-4xl">
+                <img
+                    class="mx-auto h-10"
+                    src="https://dianamajumdarart.com/wp-content/uploads/2024/08/Group-2-2.svg"
+                    alt=""
+                />
+                <figure class="mt-10">
+                    <blockquote
+                        class="text-center text-xl/8 font-semibold text-gray-900 sm:text-2xl/9"
+                    >
+                        <p>
+                            "I am beyond thrilled with my new website,
+                            thanks to the incredible work of Irina
+                            Kramer. I wanted something that truly
+                            reflected my work as a fine art painter,
+                            and Irina made it happen seamlessly. What
+                            impressed me most was how much research
+                            she did on her own. She explored artist
+                            websites, picked out the best elements,
+                            and came back with a fully developed
+                            vision. From adding a short video of me
+                            painting on the "About page" to designing
+                            a layout that beautifully showcases my
+                            work, to adding purchase options or
+                            registering for a class, she thought of
+                            everything. All I had to do was provide
+                            access to my images — she handled the
+                            rest. The result is a stunning,
+                            professional site that feels like an
+                            extension of my art. The site generated
+                            several sales already! I can’t recommend
+                            Irina highly enough!"
+                        </p>
+                    </blockquote>
+                    <figcaption class="mt-10">
+                        <div
+                            class="mt-4 flex items-center justify-center space-x-3 text-base"
+                        >
+                            <div class="font-semibold text-gray-900">
+                                Diana Majumdar
+                            </div>
+                            <svg
+                                viewBox="0 0 2 2"
+                                width="3"
+                                height="3"
+                                aria-hidden="true"
+                                class="fill-gray-900"
+                            >
+                                <circle cx="1" cy="1" r="1"></circle>
+                            </svg>
+                            <div class="text-gray-600">
+                                Fine Artist
+                            </div>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <div
+            class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8"
+        >
+            <div
+                class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,var(--color-indigo-100),white)] opacity-20"
+            >
+            </div>
+            <div
+                class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white ring-1 shadow-xl shadow-indigo-600/10 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"
+            >
+            </div>
+            <div class="mx-auto max-w-2xl lg:max-w-4xl">
+                <img
+                    class="mx-auto h-16"
+                    src="https://getvectorlogo.com/wp-content/uploads/2018/10/lowepro-vector-logo.png"
+                    alt=""
+                />
+                <figure class="mt-10">
+                    <blockquote
+                        class="text-center text-xl/8 font-semibold text-gray-900 sm:text-2xl/9"
+                    >
+                        <p>
+                            "Irina is the type of professional
+                            colleague everyone appreciates and
+                            respects. Her combination of tech
+                            knowledge, project management and positive
+                            collaboration made our sites engaging,
+                            clear, highly functional and relevant."
+                        </p>
+                    </blockquote>
+                    <figcaption class="mt-10">
+                        <div
+                            class="mt-4 flex items-center justify-center space-x-3 text-base"
+                        >
+                            <div class="font-semibold text-gray-900">
+                                Katrina Neill
+                            </div>
+                            <svg
+                                viewBox="0 0 2 2"
+                                width="3"
+                                height="3"
+                                aria-hidden="true"
+                                class="fill-gray-900"
+                            >
+                                <circle cx="1" cy="1" r="1"></circle>
+                            </svg>
+                            <div class="text-gray-600">
+                                Senior Copywriter
+                            </div>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
     </section>
 
     <!-- skills -->
@@ -550,13 +468,8 @@ import aboutPhoto from "../images/aboutPhoto.jpg";
                                 WooCommerce.
                             </p>
                             <p>
-                                If you're looking for a strategic
-                                partner to bring your online store to
-                                life, <a
-                                    href="mailto:irinakramer@yahoo.com?subject=Inquiry from website"
-                                    class="text-rose-600 hover:text-rose-400"
-                                    >I'd love to chat with you</a
-                                >.
+                                I would love to partner with your to
+                                bring your online store to life.
                             </p>
                         </div>
                     </div>
@@ -564,36 +477,6 @@ import aboutPhoto from "../images/aboutPhoto.jpg";
             </div>
         </div>
     </section>
-
-    <!-- testimonials -->
-    <!-- <section>
-    
-        <div class="px-8 py-12 mx-auto md:px-12 lg:px-32 max-w-7xl">
-            <div class="text-center">
-                <h2
-                    class="text-4xl noto-serif font-semibold tracking-tighter text-neutral-900 mb-8 lg:mb-12"
-                >
-                    What my clients and colleagues are saying
-                </h2>
-            </div>
-            <ul
-                role="list"
-                class="grid max-w-2xl grid-cols-1 gap-6 mx-auto sm:gap-4 lg:max-w-none lg:grid-cols-3"
-            >
-                {
-                    testimonials.map((testimonial) => (
-                        <TestimonialCard
-                            author={testimonial.author}
-                            title={testimonial.title}
-                            text={testimonial.text}
-                            avatar={testimonial.avatar}
-                            link={testimonial.link}
-                        />
-                    ))
-                }
-            </ul>
-        </div>
-    </section> -->
 
     <!-- hire me -->
     <section id="contact">
