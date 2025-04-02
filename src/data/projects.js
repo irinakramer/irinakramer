@@ -14,6 +14,7 @@ import ComingSoon from "../images/projects/ComingSoon.svg";
 import dianamajumdarart from "../images/projects/dianamajumdarart.jpg";
 import fibercirclestudio from "../images/projects/fiber_circle_studio.jpg";
 import veraalden from "../images/projects/vera-alden.jpg";
+import glenkramer from "../images/projects/glen_kramer.jpg";
 
 const projects = [
     {
@@ -46,6 +47,17 @@ const projects = [
         year: "2025",
         company: "IKON web studio",
     },
+    {
+        name: "Glen Kramer fine art",
+        url: "https://glenkramer.netlify.app",
+        description:
+            "Designed and coded a website for a plein air artist to display and keep an archive of their art. Integrated a feature to show framed version of each artwork.",
+        tech: "Astro, HTML, CSS, Javascript",
+        image: glenkramer,
+        year: "2024",
+        company: "IKON web studio",
+    },
+
     {
         name: "JOBY.com eCommerce",
         url: "http://joby.com/us-en/",
