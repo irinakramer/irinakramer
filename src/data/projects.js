@@ -15,8 +15,19 @@ import dianamajumdarart from "../images/projects/dianamajumdarart.jpg";
 import fibercirclestudio from "../images/projects/fiber_circle_studio.jpg";
 import veraalden from "../images/projects/vera-alden.jpg";
 import glenkramer from "../images/projects/glen_kramer.jpg";
+import jennifermygatttatum from "../images/projects/jennifer-mygatt-tatum.jpg";
 
 const projects = [
+    {
+        name: "Jennifer Mygatt Tatum Art eCommerce",
+        url: "https://www.jennifermygatttatum.com",
+        description:
+            "Designed and developed a custom Squarespace eCommerce website tailored to the artist’s style. Built features to showcase artwork, events, and galleries. Integrated payment processing, contact forms, Mailchimp signup, Instagram feed, and connected the site to Google Search Console and Merchant Center.",
+        tech: "Squarespace, CSS, image processing",
+        image: jennifermygatttatum,
+        year: "2025",
+        company: "IKON web studio",
+    },
     {
         name: "Fiber Circle Studio",
         url: "https://fibercirclestudio.com/",
