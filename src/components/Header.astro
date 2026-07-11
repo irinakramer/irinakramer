@@ -9,60 +9,62 @@ import {
 import IK from "./icons/IK.astro";
 ---
 
-<header class="lg:flex p-5 gap-5 bg-white">
+<header class="lg:flex p-5 gap-5 bg-white justify-center">
     <Astronav>
-        <div class="flex w-full justify-between">
-            <div>
-                <a
-                    class="inline-flex items-center gap-3"
-                    href="/"
-                    title="Irina Kramer"
+        <div class="flex w-full lg:max-w-6xl justify-between">
+            <div class="flex w-full justify-between">
+                <div>
+                    <a
+                        class="inline-flex items-center gap-3"
+                        href="/"
+                        title="Irina Kramer"
+                    >
+                        <span><IK /></span>
+                        <span
+                            class="text-xl font-display tracking-tight text-neutral-900 hover:text-neutral-500 transition-colors"
+                            >Irina Kramer</span
+                        >
+                    </a>
+                </div>
+                <div class="block lg:hidden">
+                    <MenuIcon class="w-4 h-4 text-gray-800" />
+                </div>
+            </div>
+            <MenuItems class="hidden lg:flex items-center">
+                <ul
+                    class="flex flex-col gap-4 text-center lg:flex-row lg:gap-5 text-sm uppercase"
                 >
-                    <span><IK /></span>
-                    <span
-                        class="text-xl font-bold tracking-tight text-neutral-900 hover:text-neutral-500 transition-colors"
-                        >Irina Kramer</span
-                    >
-                </a>
-            </div>
-            <div class="block lg:hidden">
-                <MenuIcon class="w-4 h-4 text-gray-800" />
-            </div>
+                    <li>
+                        <a
+                            href="#portfolio"
+                            class="text-neutral-900 hover:text-neutral-500"
+                            >Portfolio</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#testimonials"
+                            class="text-neutral-900 hover:text-neutral-500"
+                            >Testimonials</a
+                        >
+                    </li>
+                    <!-- <li><a href="#services">Services</a></li> -->
+                    <li>
+                        <a
+                            href="#about"
+                            class="text-neutral-900 hover:text-neutral-500"
+                            >About</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#contact"
+                            class="text-neutral-900 hover:text-neutral-500"
+                            >Contact</a
+                        >
+                    </li>
+                </ul>
+            </MenuItems>
         </div>
-        <MenuItems class="hidden lg:flex items-center">
-            <ul
-                class="flex flex-col gap-4 text-center lg:flex-row lg:gap-5 text-sm font-semibold"
-            >
-                <li>
-                    <a
-                        href="#portfolio"
-                        class="text-neutral-900 hover:text-neutral-500"
-                        >Portfolio</a
-                    >
-                </li>
-                <li>
-                    <a
-                        href="#testimonials"
-                        class="text-neutral-900 hover:text-neutral-500"
-                        >Testimonials</a
-                    >
-                </li>
-                <!-- <li><a href="#services">Services</a></li> -->
-                <li>
-                    <a
-                        href="#about"
-                        class="text-neutral-900 hover:text-neutral-500"
-                        >About</a
-                    >
-                </li>
-                <li>
-                    <a
-                        href="#contact"
-                        class="text-neutral-900 hover:text-neutral-500"
-                        >Contact</a
-                    >
-                </li>
-            </ul>
-        </MenuItems>
     </Astronav>
 </header>
